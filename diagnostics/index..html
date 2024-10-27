@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/core.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,
+800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/diagnostics.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</head>
+<body class="hos">
+<div class="wrapper align-items-stretch">
+  <div class="float-left">
+<nav id="diagnostics" class="active"> 
+  
+  
+  <div class="text-center pt-3"><a href="" class="logo"> <img src="images/logo.png"/>
+      
+  <a href="" class="logo2"> 
+    
+    <img src="images/logo_big.png"/>
+
+   <div><img class="diagnosticscenterimg" src="images/diagnosticscenter.png"/></div> 
+
+
+ <h1>Welcome, Adidash<br>
+  Diagnostics Center</h1>
+</div>
+</a>
+  <ul class="list-unstyled components mb-5">
+    <li class="active diagnostics" > <a href="index..html" data-toggle="tooltip" data-placement="right" title="Home"> <span > <img  src="images/diagnostics/home_icon.png"/> </span> Home</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="invoice"> <span> <img src="./images/diagnostics/appointments.png"/> </span> Appointments</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Revenues"> <span> <img src="./images/diagnostics/calendar.png"/> </span> Calendar</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Payments"> <span> <img  src="./images/diagnostics/basescheduler.png"/> </span> Base Scheduler</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Add Doctors"> <span> <img  src="./images/diagnostics/services.png"/> </span> Services</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Base Schedule"> <span> <img  src="./images/diagnostics/reports.png"/> </span> Reports</a> </li>
+    <li class="diagnosticsinner"> <a href="clinic-rooms.html" data-toggle="tooltip" data-placement="right" title="Beds"> <span> <img src="./images/diagnostics/medicalrecords.png"/> </span>Medical Records</a> </li>
+    <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Insurance"> <span> <img  src="./images/diagnostics/profile.png"/> </span> Profile</a> </li>
+    <!-- <li class="diagnosticsinner"> <a href="ambulance.html" data-toggle="tooltip" data-placement="right" title="Ambulatory"> <span> <img  src="/images/diagnostics/calendar.png"/> </span> Profile</a> </li> -->
+    <!-- <li class="diagnosticsinner"> <a href="#" data-toggle="tooltip" data-placement="right" title="Bloodbank"> <span> <img  src="./images/bloodbank.png"/> </span> Bloodbank</a> </li>
+    <li class="diagnosticsinner"> <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Profile"> <span> <img  src="./images/profile.png"/> </span> Profile</a> </li> -->
+  </ul>
+  <!-- <div class="footer">
+    <p>swe</p>
+  </div> -->
+</nav>
+
+</div>
+
+<header class="bc_topmenudio">
+  <div class="container-fulid">
+  <div class="row">
+    <div class="col-md-3 col-sm-2 col-xs-2 loge-cure">
+      <div class="d-flex">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button type="button" id="diagnosticsCollapse" class="btn btn-primary"> <img class="iconwidth" src="./images/diagnostics/menu.png"/> <span class="sr-only">Toggle Menu</span> </button>
+        </nav>
+        <p>Logged in as Kumar Jatin</p>
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-10 col-xs-10 logs">
+      <div class=" cure_span_pad"> <span class="span1"> Last login 09-Jan-2023 11:17 AM</span> 
+         <span class="quastion"> <a href="#"  class="allpads"><img class="iconwidth" style="margin-top: 8px;" src="./images/diagnostics/quistion_mark.png"/></a></span> 
+         
+         <a href="#" class="notification notificationdio allpads">
+          <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#right_modal"> <span><img class="iconwidth" src="./images/diagnostics/notification.png"/></span></button>
+          <span class="badge">3</span>
+        </a>
+         <a href="#">  <div class="d-flex">
+          <span><img class="usericon" src="./images/diagnostics/user.png"/></span> 
+         <span class=" usertextdio">
+          <p class="font_wight_bold">Kumar</p>
+        <p class="color_red ">28 years - Male </p>
+        </span> 
+      </div></a>
+        <span class=""><a href="#"><img class="iconwidth" style="margin-left: 10px; margin-top: 4px;" src="./images/diagnostics/logout.png"/></a></span> </div>
+    </div>
+  </div>
+</div>
+</header>
+<!-- Page Content  -->
+<section>
+<div id="content" class="cont">
+<div>
+
+<div class="container-fluid totialsdio">
+  <div class="row">
+<div class="cure-box-pad">
+  <h1 class="">Welcome, Jatin.<b>You have 2 alerts today.</b></h1>
+</div>
+</div>
+</div>
+
+<div class="container-fluid pading_0 totialsdio">
+<div class="row">
+  <div class="col-md-9">
+    <div class="row hosp_doc ">
+      <!-- <div class="col-md-3">
+        <div class="box box_hosp hospitals_item_box ">
+          <div class="box-body text-center">
+            <div class=""> <img src="images/reports.png" class="" alt=""> </div>
+            <b>Reports</b>
+            <p class="mt-0">3000</p>
+            <button type="button" class="btn">View All</button>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-lg-4 col-md-4  col-sm-6  col-6">
+        <div class="box box_hosp diagnostics_item_box ">
+          <div class="box-body">
+            <div class="float-left mr-3"> <img  src="images/diagnostics/appimont.png" class="imgwidthallappoiments" alt=""> </div>
+
+         <div class="float-left">   <b>Appoinments</b><p>300</p></div>
+            <!-- <p class="mt-0">3000</p>
+            <a href="allappointments.html"><button type="button" class="btn">View All</button></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4  col-sm-6  col-6">
+        <div class="box box_hosp diagnostics_item_box tests">
+          <div class="box-body">
+            <div class="float-left mr-3"> <img src="images/diagnostics/tests.png" class="imgwidthallappoiments" alt=""> </div>
+
+         <div class="float-left">   <b>Packages/Tests</b><p>300</p></div>
+            <!-- <p class="mt-0">3000</p>
+            <a href="allappointments.html"><button type="button" class="btn">View All</button></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4  col-sm-6  col-6">
+        <div class="box box_hosp diagnostics_item_box rreports">
+          <div class="box-body">
+            <div class="float-left mr-3"> <img src="images/diagnostics/reports_all.png" class="imgwidthallappoiments" alt=""> </div>
+
+         <div class="float-left">   <b>Reports</b><p>300</p></div>
+            <!-- <p class="mt-0">3000</p>
+            <a href="allappointments.html"><button type="button" class="btn">View All</button></a> -->
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+    
+    <div class="row mr20 mt-2">
+      <div class="col-lg-6 col-md-5 col-sm-5 col-6">
+        <div class="box box_today ">
+          <div class="box-header box-header_new">
+            <h2 class="box-title pl-3 mt-2">Total Patients</h2>
+          </div>
+          <div class="box-body">
+            <div>
+              <div class="inner-user-div4 innerdiv ">
+                <ul class="todayapp">
+                  <li>
+                    <div class="d-sm-flex  mb-1 align-items-center ">
+                      <div class="userimg"><img  src="images/diagnostics/a_user.png" class="img-1 mr-sm-4 mr-3" alt=""></div>
+                      <div class="d-flex justyfiy align-items-center  pr-2 border-bottom">
+                        <div class="flot-left medwidth">
+                          <h4 class="mb-sm-2 mb-1"> <a href="doctor.html" class="text-black">Dr. Adinarayana</a> </h4>
+                          <span class="fs-14 text-primary font-w600">11-Sep-2023</span> </div>
+                          <div class="text-sm-right mt-sm-0 mt-3 float-end datato">
+                            <div class="float-left outsection   someElement mr-3 text-center">
+                              <a href="#" data-toggle="tooltip2 "  data-tooltip="video Appoiment" data-placement="right">
+                                <img   src="images/diagnostics/invoice.png" class="width_img" alt=""></a><p>Invoice</p></div>
+                            <div class="float-left someElement outsection text-center"> <a href="#" data-tooltip="Cancel Appoiment"  title="cancel Appoiment">
+                              <img  src="images/diagnostics/reports_sec.png" class="width_img" alt=""></a><p>Reports</p></div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-sm-flex  mb-1 align-items-center ">
+                      <div class="userimg"><img  src="images/diagnostics/b_user.png" class="img-1 mr-sm-4 mr-3" alt=""></div>
+                      <div class="d-flex justyfiy align-items-center  pr-2 border-bottom">
+                        <div class="flot-left medwidth">
+                          <h4 class="mb-sm-2 mb-1"> <a href="doctor.html" class="text-black">Dr. Adinarayana</a> </h4>
+                          <span class="fs-14 text-primary font-w600">11-Sep-2023</span> </div>
+                          <div class="text-sm-right mt-sm-0 mt-3 float-end datato">
+                            <div class="float-left outsection   someElement mr-3 text-center">
+                              <a href="#" data-toggle="tooltip2 "  data-tooltip="video Appoiment" data-placement="right">
+                                <img  src="images/diagnostics/invoice.png" class="width_img" alt=""></a><p>Invoice</p></div>
+                            <div class="float-left someElement outsection text-center"> <a href="#" data-tooltip="Cancel Appoiment"  title="cancel Appoiment">
+                              <img  src="images/diagnostics/reports_sec.png" class="width_img" alt=""></a><p>Reports</p></div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-sm-flex  mb-1 align-items-center ">
+                      <div class="userimg"><img  src="images/diagnostics/c_user.png" class="img-1 mr-sm-4 mr-3" alt=""></div>
+                      <div class="d-flex justyfiy align-items-center  pr-2 border-bottom">
+                        <div class="flot-left medwidth">
+                          <h4 class="mb-sm-2 mb-1"> <a href="doctor.html" class="text-black">Dr. Adinarayana</a> </h4>
+                          <span class="fs-14 text-primary font-w600">11-Sep-2023</span> </div>
+                          <div class="text-sm-right mt-sm-0 mt-3 float-end datato">
+                            <div class="float-left outsection   someElement mr-3 text-center">
+                              <a href="#" data-toggle="tooltip2 "  data-tooltip="video Appoiment" data-placement="right">
+                                <img  src="images/diagnostics/invoice.png" class="width_img" alt=""></a><p>Invoice</p></div>
+                            <div class="float-left someElement outsection text-center"> <a href="#" data-tooltip="Cancel Appoiment"  title="cancel Appoiment">
+                              <img  src="images/diagnostics/reports_sec.png" class="width_img" alt=""></a><p>Reports</p></div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-sm-flex  mb-1 align-items-center ">
+                      <div class="userimg"><img  src="images/diagnostics/d_user.png" class="img-1 mr-sm-4 mr-3" alt=""></div>
+                      <div class="d-flex justyfiy align-items-center  pr-2 border-bottom">
+                        <div class="flot-left medwidth">
+                          <h4 class="mb-sm-2 mb-1"> <a href="doctor.html" class="text-black">Dr. Adinarayana</a> </h4>
+                          <span class="fs-14 text-primary font-w600">11-Sep-2023</span> </div>
+                          <div class="text-sm-right mt-sm-0 mt-3 float-end datato">
+                            <div class="float-left outsection   someElement mr-3 text-center">
+                              <a href="#" data-toggle="tooltip2 "  data-tooltip="video Appoiment" data-placement="right">
+                                <img  src="images/diagnostics/invoice.png" class="width_img" alt=""></a><p>Invoice</p></div>
+                            <div class="float-left someElement outsection text-center"> <a href="#" data-tooltip="Cancel Appoiment"  title="cancel Appoiment">
+                              <img  src="images/diagnostics/reports_sec.png" class="width_img" alt=""></a><p>Reports</p></div>
+                          </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <a href="appointments.html" class="viewde">View details</a>
+                <div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-5 col-sm-5 col-6">
+        <div class="box box_today bc_white">
+          <div class="box-header box-header_new">
+            <h2 class="box-title pl-3 mt-2">Payments</h2>
+          </div>
+          <div class="box-body">
+            <div>
+              <div class="inner-user-div4 innerdiv">
+                <h2>Rs 30,000</h2>
+                <img  src="images/diagnostics/map.png" class="mapimg" alt="" >
+                <!-- <a href="upcomingdischarges.html" class="viewde">View details</a> -->
+                <div> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3   hospitals_dashbord ">
+    <div class="box box_today bc_white2">
+      <div class="box-header box-header_new">
+        <h2 class="box-title pl-3 mt-2">Notifications</h2>
+      </div>
+  
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad2">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad2">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad2">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad2">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+      <div class="notipad2">
+        
+        <div class="float-left"><img class="cure-noti ml-2 mt-2" src="images/diagnostics/noti.png"></div>
+        <div class="float-left notifont text_noti">
+          <h4>Appointment Request </h4>
+          <p>you have got a new appointment 
+            request from a patient  jati have got a new appointment </p>
+        
+        </div>
+       
+      
+      
+      </div>
+      
+      
+        </div>
+      </div>
+
+      
+    </div>
+    
+  </div>
+</div>
+</div>
+<div class="container-fluid pading_0 totialsdio mt-2">
+<div class="row mrtopl phra_cure">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="card sales-card">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 "> <img src="images/diagnostics/left.png" alt="profile-img" class=" img-fluid"> </div>
+        <div class="col-lg-6 col-md-6  col-xs-12 col-sm-12 pharmacyy">
+          <h5> Offers </h5>
+          <p>Providing the finest treatment from the most experienced doctors in the field.</p>
+          <a href="#">View details</a> </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="card sales-card">
+      <div class="row">
+        <div class="col-lg-6 col-md-4 col-xs-12 col-sm-12 "> <img src="images/diagnostics/right.png" alt="profile-img" class="img-fluid  ml-5 "> </div>
+        <div class="col-lg-6 col-md-8  col-xs-12 col-sm-12 pharmacyy">
+          <h5>Referrals</h5>
+          <p>IT Raids Find Labs Paid Doctors Crores 
+            For Referring Medical Tests, Rs 100Cr 
+            Black Money Detected.</p>
+          <a href="#">View details</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="modal modal-right fade modlcure" id="right_modal" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content mt-4">
+      <div class="modal-header popupbackground2">
+        <h5 class="modal-title"><img class="cure-tabtabimg" src="images/medicalhistory/notifications.png"> Notifications </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-bodycure">
+        <section id="tabs " class="myaltabs">
+          <div class="container modal-bodycure">
+            <!-- <h6 class="section-title h1">Tabs</h6> -->
+
+            <div class="container">
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img class="rescheduleappointment" src="images/medicalhistory/time.png">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc notifications_odd">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc notifications_odd">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+<div class="notifications_bc notifications_odd">
+  
+  <div class="float-left" style="margin-left: 10px;"><img class="cure-noti" src="images/medicalhistory/notification_cal.png"></div>
+  <div class="float-left">
+    <div style="margin-left: 10px;"> <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><img src="images/medicalhistory/time.png" class="rescheduleappointment">&nbsp;&nbsp;08:30</b></p></div>
+   
+
+   <div><h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3></div> 
+  
+  </div>
+  <div class="float-right"><img class="notification_eye" src="images/medicalhistory/eye_prescription.png" style=" margin-right: 20px;
+
+    margin-top: 12px;"></div>
+
+
+</div>
+
+
+  </div>
+</div>
+
+            </div>
+
+
+
+
+          </div>
+        </section>
+      
+      </div>
+      <!-- <div class="modal-footer modal-footer-fixed">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</section>
+</div>
+
+<script>
+         (function($) {
+         
+         "use strict";
+         
+         var fullHeight = function() {
+         
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+               $('.js-fullheight').css('height', $(window).height());
+            });
+         
+         };
+         fullHeight();
+         
+         $('#diagnosticsCollapse').on('click', function () {
+            $('#diagnostics').toggleClass('active');
+         });
+         
+         })(jQuery);
+         
+         
+         
+      </script>
+
+<script>
+   $(document).ready(function(){
+     $('[data-toggle="tooltip"]').tooltip();   
+   });
+   </script>
+
+<script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip2"]').tooltip2();   
+  });
+  </script>
+
+
+</body>
+</html>
