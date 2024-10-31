@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Invoice</title>
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/core.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+         .modal-open{ padding-right:0px !important;}
+         .table td{
+         vertical-align: middle;
+         font-size: 12px !important;
+         font-weight: 500;
+         color:#110B56;
+         }
+         .donecolor{ color: #4CAA64 !important;}
+      </style>
+   </head>
+   <body class="hos bodyallvr">
+      <nav id="sidebaradi" class="active">
+         <a href="index.html" class="logocure"> <img src="images/indexpageicons/logo.svg"/> </a>
+         <ul class="list-unstyled components mb-5">
+            <li class=" home_icon" > <a href="index.html" data-toggle="tooltip" data-placement="right" title="Home"> <span class="homeiconclss" > <img  src="./images/indexpageicons/home_line.svg"/> </span>  Home</a> </li>
+            <li class="inner_icon"> <a href="appointments.html" data-toggle="tooltip" data-placement="right" title="invoice"> <span> <img src="./images/indexpageicons/reports_white.svg"/> </span> Appoinments</a> </li>
+            <li class="inner_icon"> <a href="clinic-associations.html" data-toggle="tooltip" data-placement="right" title="Revenues"> <span> <img src="./images/indexpageicons/associates.svg"/> </span>Associates</a> </li>
+            <li class="inner_icon"> <a href="in-patient-list.html" data-toggle="tooltip" data-placement="right" title="Payments"> <span> <img  src="./images/indexpageicons/ipdlist.svg"/> </span>IPD List</a> </li>
+            <li class="inner_icon"> <a href="out-patient-list.html" data-toggle="tooltip" data-placement="right" title="Payments"> <span> <img  src="./images/indexpageicons/outpatient.svg"/> </span>OPD List</a> </li>
+            <li class="inner_icon"> <a href="clinic-rooms.html" data-toggle="tooltip" data-placement="right" title="Add Doctors"> <span> <img  src="./images/indexpageicons/rooms.svg"/> </span>Rooms</a> </li>
+            <li class="inner_icon"> <a href="clinic-branches.html" data-toggle="tooltip" data-placement="right" title="Base Schedule"> <span> <img  src="./images/indexpageicons/branch.svg"/> </span> Add Branch</a> </li>
+            <li class="inner_icon"> <a href="clinic-surgeries.html" data-toggle="tooltip" data-placement="right" title="Beds"> <span> <img src="./images/indexpageicons/surgeries.svg"/> </span>Surgeries</a> </li>
+            <li class="inner_icon"> <a href="clinic-tpa.html" data-toggle="tooltip" data-placement="right" title="Insurance"> <span> <img  src="./images/indexpageicons/insurance.svg"/> </span> TPA</a> </li>
+            <li class="inner_icon"> <a href="clinic-users.html" data-toggle="tooltip" data-placement="right" title="Insurance"> <span> <img  src="./images/indexpageicons/patients.svg"/> </span> Patients</a> </li>
+            <li class="inner_icon"> <a href="clinic-operation-theaters.html" data-toggle="tooltip" data-placement="right" title="Insurance"> <span> <img  src="./images/indexpageicons/operationtheater.svg"/> </span>Operation Theater</a> </li>
+            <li class="active inner_icon"> <a href="clinic-ambulance.html" data-toggle="tooltip" data-placement="right" title="Ambulatory"> <span> <img  src="./images/indexpageicons/ambulatoryservices_white.svg"/> </span> Ambulance</a> </li>
+            <li class="inner_icon"> <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Profile"> <span> <img  src="./images/indexpageicons/profile.svg"/> </span> Profile</a> </li>
+            <li class="inner_icon"> <a href="bloodbank.html" data-toggle="tooltip" data-placement="right" title="Bloodbank"> <span> <img  src="./images/indexpageicons/blood.svg"/> </span> Bloodbank</a> </li>
+         </ul>
+      </nav>
+      <header class="bc_topmenu cure-main-div">
+         <div class="container-fulid">
+            <div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2 loge-cure">
+                  <div class="d-flex">
+                     <nav class="navbar navbar-expand-lg navbar-light">
+                        <button type="button" id="sidebaradiCollapse" class="btn btn-primary bc_topmenubtn"> <i class="fa fa-bars"></i> <span class="sr-only">Toggle Menu</span> </button>
+                     </nav>
+                     <p>Logged in as Adinarayana</p>
+                     <div><img class="logo_mobile mobile_logo_320" src="images/curemetriclogocolor.svg"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                  <div class="allflex">
+                     <div class="mt-3">
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                           <label class="form-check-label" for="inlineRadio1">OPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">IPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">Emergency</label>
+                        </div>
+                     </div>
+                     <div class="topnav">
+                        <div class="search-container">
+                           <form action="#" class="">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="mrrs">
+                        <a href="#">
+                           <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+                           <div class="float-left mt-1">New Patient</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-10 col-xs-10 logs">
+                  <div class=" cure_span_pad">
+                     <span class="span1">Last login 09-Jan-2023 11:17 AM</span> <span class="quastion span_icons"> <a href="#"><i class="fa fa-question"></i></a></span> <a href="#" class="notification">
+                     <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#notification"> <span><i class="fa fa-bell"></i></span></button>
+                     <span class="badge">3</span> </a> 
+                     <!-- <a href="#">
+                        <div class="d-flex">
+                           <span><img class="userimgwidthnew" src="./images/profile_log.png"/></span> 
+                           <span class=" usertext">
+                              <p class="font_wight_bold">Adinarayana</p>
+                              <p class="color_red ">28 years - Male </p>
+                           </span>
+                        </div>
+                        </a> -->
+                     <span class="span_icons ml-2"><a href="#"><i class="fas fa-sign-out-alt"></i></a></span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div role="main" class="cure-main-div">
+         <!-- Page Content  -->
+         <div class="clearfix bcforall">
+            <section>
+               <div class="container-fluid cont">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <ol class="breadcrumb breadcrumbpro breadcrums">
+                           <li class="breadcrumb-item">
+                              <a href="index.html">
+                              <img src="images/inner_pages_icons/breadcrumb.svg"></a>
+                           </li>
+                           <li class="breadcrumb-item active" aria-current="page"> Clinic-Ambulance</li>
+                        </ol>
+                        <div class="app_bc2  cure-tabtab">
+                           <div class="container-fluid">
+                              <div class="row mb-2">
+                                 <div class="col-sm-3 col-xl-3 d-flex align-items-center">
+                                    <!-- <h5 class="cure-taballapp"><span><img class="cavie" src="./images/medicalhistory/calender_view.png"></span> All Appoinments</h5> -->
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- <div class="linedo"></div> -->
+                           <div class="cure-tabtab">
+                              <div class="container-fluid">
+                                 <div class="row mb-2">
+                                    <div class="col-sm-12 col-xl-12 topnav ambnav">
+                                       <div class="float-left">
+                                          <h3 class="font-size display-6 fontds mt-2">Ambulance</h3>
+                                       </div>
+                                       <div class="float-right font_wight_bold">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1" data-toggle="modal" data-target="#top_modal">  <i class="clicroom fas fa-users"></i>  Add Ambulance
+                                          </button>
+                                       </div>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="linedo"></div>
+                              <div class="topnav">
+                                 <div class="search-container ml-3">
+                                    <form action="#" class="">
+                                       <input type="text" placeholder="Search.." name="search">
+                                       <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                 </div>
+                              </div>
+                              <table class="table all_appoiments_pad  table table-striped  table-styled table-hover doctoract">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col" class="firstch"></th>
+                                       <th scope="col">Vehicle No</th>
+                                       <th scope="col">Vehicle Name
+                                       </th>
+                                       <th scope="col">Year Made</th>
+                                       <th scope="col">Driver Name</th>
+                                       <th scope="col">Driver License No</th>
+                                       <th scope="col">Driver Contact No</th>
+                                       <th scope="col" class="text-center">Action</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                    <tr class="">
+                                       <th scope="row tableview">
+                                          <div class="userimg12121"><img src="images/indexpageicons/ambulance_list.svg"></div>
+                                       </th>
+                                       <td>GJ88KW7845</td>
+                                       <td>Toyota Innova</td>
+                                       <td> 2009</td>
+                                       <td> Adinarayana</td>
+                                       <td> GT6456345645</td>
+                                       <td> +91 9652184284</td>
+                                       <td class="text-center">
+                                          <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                          <i class="far fa-edit blue_bc"></i>
+                                          </button>
+                                          <i class="fas fa-trash delete_red_bc"></i>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <div class="float-right mt-3 mr-4">
+                                 <ul id="paginationnew">
+                                    <li><a class="" href="#">«</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="active">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">»</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal modal-right fade modlcure" id="hsupplies_edit" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content ">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title"><img class="cure-tabtabimg" src="images/patientdetials_icon.png">Edit Hospital Supplies Detials</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body modal-bodycure">
+                                    <div class="container user-curetab">
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Name <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Designation<b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Designation">
+                                          </div>
+                                       </div>
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Date Of Joining <b>*</b></label>
+                                             <img class="calcav" src="./images/medicalhistory/calender_view.png">
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Phone Number<b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                          </div>
+                                       </div>
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Email <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Email">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Address <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Address">
+                                          </div>
+                                       </div>
+                                       <div class="vime">
+                                          <button type="button" class="btn butoon2 btn-primary al  button_code"><a><img class="plusicon" src="./images/medicalhistory/plus.png"></a>Update Details</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="modal-footer modal-footer-fixed">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> -->
+                              </div>
+                           </div>
+                        </div>
+                        <footer class="footer_padding">
+                           <nav class="mobile-bottom-nav">
+                              <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="adddoctors.html">
+                                       <i class="icon_bottom fas fa-user-md"  id="image"></i>
+                                       <p>Add Doctors</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="ambulance.html">
+                                       <i class="icon_bottom fas fa-ambulance"></i>
+                                       <p>Ambulatory</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="baseschedule.html">
+                                       <i class="icon_bottom fas fa-calendar-alt"></i>
+                                       <p>Base Schedule</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="index.html">	<i class="mobile_icon_home fas fa-home"></i></a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="allappointments.html">
+                                       <i class="icon_bottom far fa-credit-card" ></i>
+                                       <p>Payments</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="#">
+                                       <i class="icon_bottom fas fa-tint"></i>
+                                       <p>Bloodbank</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="profile.html">
+                                       <i class="icon_bottom fas fa-user-plus"></i>
+                                       <p>Profile</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </nav>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <!-- Headtop_notification_all -->
+               <div class="modal modal-right fade modlcure" id="notification" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content ">
+                        <div class="modal-header popupbackground">
+                           <h5 class="modal-title">
+                              <span class="float-left">
+                                 <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                              </span>
+                              <span class="spaneeditem2"> Notifications </span> 
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        </div>
+                        <div class="modal-body modal-bodycure">
+                           <section id="tabs " class="myaltabs">
+                              <div class="container modal-bodycure">
+                                 <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <a href=""data-toggle="modal" data-target="#regular_modal">
+                                             <div class="notifications_bc">
+                                                <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                <div class="float-left">
+                                                   <div class="mrl10">
+                                                      <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                   </div>
+                                                   <div>
+                                                      <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                   </div>
+                                                </div>
+                                                <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                        </div>
+                        <!-- <div class="modal-footer modal-footer-fixed">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button>
+                           </div> --> 
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade modlcurenew todayapp2" id="regular_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                  <div class="modal-dialog modelcon  modal-dialog-centered" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header popupbackground">
+                           <h5 class="modal-title">
+                              <span class="float-left">
+                                 <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                              </span>
+                              <span class="spaneeditem2"> Notifications View </span> 
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                        </div>
+                        <div class="modal-body">
+                           <div class="notifications_bc2">
+                              <div class="float-left mrl10"><i class="cure-noti fas fa-calendar-check"></i></div>
+                              <div class="float-left">
+                                 <div class="mrl10">
+                                    <p>Reschedule Appointment <b style="font-weight: normal;"><i class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                 </div>
+                                 <div>
+                                    <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Headtop_notification_all -->
+            </section>
+         </div>
+      </div>
+      <footer class="clearfix cure-main-div cure-footer main-footer-cure profileprofilemain-footer-cure">
+         <p class="float-left"> Have a question? Call us : +1800-266-18023</p>
+         <p class="float-right"> Need support? Mail us : info@cure-metric.com</p>
+      </footer>
+      <script>
+         (function($) {
+         
+         "use strict";
+         
+         var fullHeight = function() {
+         
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+               $('.js-fullheight').css('height', $(window).height());
+            });
+         
+         };
+         fullHeight();
+         
+         $('#sidebaradiCollapse').on('click', function () {
+            $('#sidebaradi').toggleClass('active');
+            $('body').toggleClass('nav-expanded');
+         });
+         
+         })(jQuery);
+      </script> 
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip2"]').tooltip2();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip2"]').tooltip2();   
+         });
+      </script>
+      <script>
+         var navItems = document.querySelectorAll(".mobile-bottom-nav__item");
+           navItems.forEach(function (e, i) {
+             e.addEventListener("click", function (e) {
+               navItems.forEach(function (e2, i2) {
+                 e2.classList.remove("mobile-bottom-nav__item--active");
+               });
+               this.classList.add("mobile-bottom-nav__item--active");
+             });
+           });
+           
+      </script>
+   </body>
+</html>

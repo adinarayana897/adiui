@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>Globals</title>
+<link href="css/sty.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style2.css" />
+<link rel="stylesheet" href="css/camera.css" />
+		<link rel="stylesheet" href="css/responsive-tabs.css">
+          <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+
+<script src="js/jquery-1.9.1.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $("#nav-mobile").html($("#nav-main").html());
+        $("#nav-trigger span").click(function(){
+            if ($("nav#nav-mobile ul").hasClass("expanded")) {
+                $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+                $(this).removeClass("open");
+            } else {
+                $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+                $(this).addClass("open");
+            }
+        });
+    });
+</script>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+	
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 10) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 100);
+			return false;
+		});
+	});
+
+});
+</script>
+
+</head>
+
+<body>
+<div class="container" style=" padding-bottom: 15px;">
+<div class="logo"><img src="images/logo.jpg" / class="respoimg logomr"></div>
+<div class="nav">
+<div id="wrapper">
+
+<!-- /#top-bar -->
+
+<!-- /header -->
+
+
+<div id="main" class="men">
+  
+        <div id="nav-trigger">
+            <span>Menu</span>
+        </div>
+        <nav id="nav-main">
+            <ul>
+                   <li><a href="">Home</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Filters</a></li>
+            </ul>
+
+            
+            
+            
+        </nav>
+        <nav id="nav-mobile"></nav>
+
+        
+   
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+<div class="clr"></div>
+<div class="menu2">
+<div class="container">
+<div class="nav2">
+      <ul>
+        <li class="home"><a href="#" class="active">Home /</a></li>
+        <li class="tutorials"><a class="active" href="#">Categories /</a></li>
+        <li class="about"><a href="#" class="active">restaurent /</a></li>
+        <li class="news"><a href="#">restaurent Deatailes </a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+<div class="clr"></div>
+<div class="banner"></div>
+
+<div class="clr"></div>
+
+<div class="container"> 
+
+<div class="row text_part">
+
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="box">
+<div class="row">
+<div class="col-md-9 col-sm-9 col-xs-12 cont">
+<h1>Gourmet Fresh Pizza from Mario</h1>
+<p>Location 95 south avenue</p>
+
+
+
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 rat text-center">
+<div>$29,99</div>
+<span><img src="images/lock.png"></span>
+
+
+</div>
+
+</div>
+<div class="clr"></div>
+<div class="fluid_container sliderm">
+
+          
+        <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/1.jpg">
+             
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/2.jpg">
+                
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/3.jpg">
+               
+            </div>
+            <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/4.jpg">
+               
+            </div>
+            <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/5.jpg">
+                
+            </div>
+            <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/6.jpg">
+                
+            </div>
+        </div><!-- #camera_wrap_2 -->
+    </div>
+    
+    
+    
+    
+    
+</div>
+<div  class="clr"></div>
+
+<div class="responsive-tabs res_tabs">
+
+			<h2>Description</h2>
+			<div class="tabs_res paddingtab-top">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+				<h1>Informations</h1>
+                <p>It's been said that success is the sum of small efforts repeated every day. The Top 100 Best Restaurants in Canada represent the establishments where creativity, consistency, and hospitality meet at every meal, every day. The list of honourees is based on an analysis of more than 275,000 reviews of approximately 1,500 restaurants across the country — all submitted by verified diners.</p>
+                <p>Conventional restaurant wisdom has it that a chef. <br>should never put his or her surname on the sign outside until that chef has arrived  </p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 right-part">
+				<h1 style="margin-bottom: 7%;">Specifications</h1>
+                <div class="right_padding">
+               <span><img src="images/img1.jpg"></span><dd>Cuisine: <b>Italian</b></dd>
+          </div>
+                          <div class="right_padding">
+                 <span><img src="images/img2.jpg"></span><dd>Cuisine: <b>95 South Park Avenue</b></dd>
+                  </div>
+                  <div class="right_padding">
+              <span><img src="images/img3.jpg"></span><dd>Cuisine: <b>9:00 - 23:00</b></dd>
+                         </div>
+                </div>
+			</div>
+
+			<h2>Features</h2>
+			<div class="tabs_res">
+				<div class="col-md-12 col-sm-12 col-xs-12"><p style="padding:20px 0px;">The Montreal region follows with 20 restaurants, and Vancouver lands 14 on the list. Calgary wins the Battle of Alberta when it comes to food: 11 of its restaurants made the cut compared to only three in Edmonton."And why? Well, because they've got great products and they have a cool heritage that they're proud of…and they're modernizing it and making it contemporary and relevant. And that's what the best cooking is all about, wherever you are."</p></div>
+			</div>
+			
+			<h2>Reviews (6)</h2>
+		<div class="tabs_res">
+				<div class="col-md-12 col-sm-12 col-xs-12"><p style="padding:20px 0px;">Chef Steve Vardy returns from a self-imposed kitchen exile – during which he became a hot yoga instructor – with this unapologetically " Canada is a place very close to my heart. I'm always excited about spending time there, and whenever I visit, I always get an amazing welcome. For a while now, I've been on the lookout for the perfect partner to open a restaurant with. So, when I tasted the menu at Buca, and found that we had the exact same ideas in mind, I knew I had found the right guys to kick start this exciting project with. It's going to be epic! "
+<br></p></div>
+			</div>
+		</div>
+
+
+
+
+
+
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 right-part2">
+<div class="rating">
+<p class="text-center"><img src="images/stare.jpg"></p>
+<p class="text-center">Ratings: <b>4.00 from 6 users</b></p>
+</div>
+<div class="space"></div>
+<div class="antonio">
+<div class="pull-left"><span><img src="images/photo_pass.png"></span></div><div class="pull-left chromesuppor_coad2"><dl class="collins">Antonio Collins</dl><dl class="collins2">individuals</dl></div>
+
+
+</div>
+
+<div class="antonio_bc">
+
+<div class="pull-left"><span><img src="images/m.png"></span></div><div class="pull-left chromesuppor_coad" ><dl class="collins"><b>Mobile:</b> 123 456 789 10</dl></div>
+<div class="pull-left clr"><span><img src="images/l.png"></span></div><div class="pull-left chromesuppor_coad" ><dl class="collins"><b>Landline:</b> 123203 987 654 </dl></div>
+<div class="pull-left clr"><span><img src="images/e.png"></span></div><div class="pull-left chromesuppor_coad" ><dl class="collins"><b>Email:</b> <b style="color:#ccdb38 !important;">info@globals.com</b></dl></div>
+<div class="pull-left clr"><span><img src="images/s.png"></span></div><div class="pull-left chromesuppor_coad"><dl class="collins" ><b>Skype:</b> skypelogin</dl></div>
+<div class="pull-left clr"><span><img src="images/w.png"></span></div><div class="pull-left chromesuppor_coad"><dl class="collins"><b>Website:</b> <b style="color:#ccdb38 !important;">themeforest.net</b></dl></div>
+<div class="clr">
+<img src="images/arrowmar.png" style="   margin-top: 14px;">
+
+
+</div>
+</div>
+
+<div class="enquire clr">
+<h2>Enquire Now</h2>
+
+
+</div>
+
+<div class="froms clr">
+<h3>Dmitry</h3>
+<p  class="clr fomm"></p>
+
+</div>
+
+<div class="froms2">
+<div class="clr border_sty"><input type="text" autofocus="" required="" tabindex="1" placeholder="Email Address" class="form_textarr"></div>
+<div class="clr border_sty"><input type="text" autofocus="" required="" tabindex="1" placeholder="Phone Number" class="form_textarr"></div>
+
+<div class="clr" style="border-bottom:2px solid #ccc;  padding-bottom: 4%;"><textarea required="" tabindex="5" placeholder="Message"  class="form_textarr"></textarea></div>
+
+<button id="contact-submit" type="submit" name="submit">Submit</button>
+<img src="images/colr.png" class="img-responsive" style="  margin: auto;
+    padding: 14px;
+    text-align: center;">
+</div>
+
+</div>
+</div>
+
+</div> 
+<div class="clr"></div>
+<div class="container related">
+
+<h2>Related Listing</h2>
+<p>Canada's Wonderland offers a wide variety of foods with several options available to guests with special dietary requirements. If you adhere to a specific dietary regiment, or have food allergies, please speak to a Food & Beverage Supervisor, for guidance and recommendations.</p>
+
+<div id="w">
+
+    
+    <div class="slider masala">
+      <ul class="slides" style=" padding: 0;">
+        <li class="slide right-part">
+                <figure>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid1.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_p.png" style=" margin:-9px 30px 3px;">
+          <p>Britney Simpson</p>
+          </div>
+          
+          </div>
+        </div>
+           <div style=" width:100px;"></div>
+           <div class=" col-md-3 col-sm-3 col-xs-12 bb">
+    <div class="bc1">
+    <div class="right_padding_inn">
+               <span><img src="images/s1.png"></span><b>Add to Compare</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc2">
+    <div class="right_padding_inn">
+               <span><img src="images/s2.png"></span><b>Add to Favorite</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc3">
+    <div class="right_padding_inn">
+               <span><img src="images/s3.png"></span><b>View Details</b>
+          </div>
+    
+    
+    </div>
+       <p class="pp">Gourmet Fresh Pizza from Mario</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Italian</b></dd>
+          </div>
+          <div class="bc-col" style="background-color:#292d31 !important;">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man.png" style=" margin:-13px 30px 3px;">
+          <p style="   border: medium none !important;">Lisa Anderson</p>
+          </div>
+          
+          </div>
+        
+        </div>
+           <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid3.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_y.png" style=" margin:-9px 30px 3px;">
+          <p>Lisa Anderson</p>
+          </div>
+          
+          </div>
+        </div>
+          <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid4.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$42,00</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man2.png" style=" margin:-9px 30px 3px;">
+          <p>Antonio Collins</p>
+          </div>
+          
+          </div>
+        </div>
+          </figure>
+        </li>
+        <li class="slide right-part">
+         <figure>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid1.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_p.png" style=" margin:-9px 30px 3px;">
+          <p>Britney Simpson</p>
+          </div>
+          
+          </div>
+        </div>
+           <div style=" width:100px;"></div>
+           <div class=" col-md-3 col-sm-3 col-xs-12 bb">
+    <div class="bc1">
+    <div class="right_padding_inn">
+               <span><img src="images/s1.png"></span><b>Add to Compare</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc2">
+    <div class="right_padding_inn">
+               <span><img src="images/s2.png"></span><b>Add to Favorite</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc3">
+    <div class="right_padding_inn">
+               <span><img src="images/s3.png"></span><b>View Details</b>
+          </div>
+    
+    
+    </div>
+       <p class="pp">Gourmet Fresh Pizza from Mario</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Italian</b></dd>
+          </div>
+          <div class="bc-col" style="background-color:#292d31 !important;">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man.png" style=" margin:-13px 30px 3px;">
+          <p style="   border: medium none !important;">Lisa Anderson</p>
+          </div>
+          
+          </div>
+        
+        </div>
+           <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid3.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_y.png" style=" margin:-9px 30px 3px;">
+          <p>Lisa Anderson</p>
+          </div>
+          
+          </div>
+        </div>
+          <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid4.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$42,00</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man2.png" style=" margin:-9px 30px 3px;">
+          <p>Antonio Collins</p>
+          </div>
+          
+          </div>
+        </div>
+          </figure>
+        </li>
+        <li class="slide right-part">
+         <figure>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid1.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_p.png" style=" margin:-9px 30px 3px;">
+          <p>Britney Simpson</p>
+          </div>
+          
+          </div>
+        </div>
+           <div style=" width:100px;"></div>
+           <div class=" col-md-3 col-sm-3 col-xs-12 bb">
+    <div class="bc1">
+    <div class="right_padding_inn">
+               <span><img src="images/s1.png"></span><b>Add to Compare</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc2">
+    <div class="right_padding_inn">
+               <span><img src="images/s2.png"></span><b>Add to Favorite</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc3">
+    <div class="right_padding_inn">
+               <span><img src="images/s3.png"></span><b>View Details</b>
+          </div>
+    
+    
+    </div>
+       <p class="pp">Gourmet Fresh Pizza from Mario</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Italian</b></dd>
+          </div>
+          <div class="bc-col" style="background-color:#292d31 !important;">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man.png" style=" margin:-13px 30px 3px;">
+          <p style="   border: medium none !important;">Lisa Anderson</p>
+          </div>
+          
+          </div>
+        
+        </div>
+           <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid3.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_y.png" style=" margin:-9px 30px 3px;">
+          <p>Lisa Anderson</p>
+          </div>
+          
+          </div>
+        </div>
+          <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid4.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$42,00</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man2.png" style=" margin:-9px 30px 3px;">
+          <p>Antonio Collins</p>
+          </div>
+          
+          </div>
+        </div>
+          </figure>
+        </li>
+        <li class="slide right-part">
+      <figure>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid1.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_p.png" style=" margin:-9px 30px 3px;">
+          <p>Britney Simpson</p>
+          </div>
+          
+          </div>
+        </div>
+           <div style=" width:100px;"></div>
+           <div class=" col-md-3 col-sm-3 col-xs-12 bb">
+    <div class="bc1">
+    <div class="right_padding_inn">
+               <span><img src="images/s1.png"></span><b>Add to Compare</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc2">
+    <div class="right_padding_inn">
+               <span><img src="images/s2.png"></span><b>Add to Favorite</b>
+          </div>
+    
+    
+    </div>
+    
+    <div class="bc3">
+    <div class="right_padding_inn">
+               <span><img src="images/s3.png"></span><b>View Details</b>
+          </div>
+    
+    
+    </div>
+       <p class="pp">Gourmet Fresh Pizza from Mario</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Italian</b></dd>
+          </div>
+          <div class="bc-col" style="background-color:#292d31 !important;">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man.png" style=" margin:-13px 30px 3px;">
+          <p style="   border: medium none !important;">Lisa Anderson</p>
+          </div>
+          
+          </div>
+        
+        </div>
+           <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid3.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$29,99</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/gallery_y.png" style=" margin:-9px 30px 3px;">
+          <p>Lisa Anderson</p>
+          </div>
+          
+          </div>
+        </div>
+          <div style=" width:100px;"></div>
+        <div class=" col-md-3 col-sm-3 col-xs-12">
+        <img src="images/imggrid4.jpg"/ class="img-responsive">
+        <p>Hiba Lebanese Restaurant</p>
+        <div class="right_padding">
+               <span><img src="images/all_1.png"></span><dd>Location: <b>95 South Park Avenue</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_2.png"></span><dd>Worktime: <b>9:00 - 23:00</b></dd>
+          </div>
+          <div class="right_padding">
+               <span><img src="images/all_3.png"></span><dd>Cuisine: <b>Asian</b></dd>
+          </div>
+          <div class="bc-col">
+          <div class="pull-left">
+          <span>$42,00</span>
+          </div>
+          <div class="pull-right" style="margin-right: 14px;">
+          <img src="images/man2.png" style=" margin:-9px 30px 3px;">
+          <p>Antonio Collins</p>
+          </div>
+          
+          </div>
+        </div>
+          </figure>
+        </li>
+        <!--<li class="slide">
+          <figure>
+      
+            <img src="img/super-squirrel.png" alt="flying super squirrel">
+          </figure>
+        </li>-->
+      </ul>
+   
+    </div>
+       
+  </div>
+  <div class="price">Show all 3568 Offers -></div>
+       <div style="margin-top:4%;">
+       <h2>Related Listing</h2>
+<p>A day at Canada's Wonderland can work up quite an appetite. We will have something that will satisfy any craving including a huge variety of tempting treats and restaurants throughout the park. </p>
+
+<div id="w">
+
+    
+    <div class="slider masala2">
+      <ul class="slides" style=" padding: 0;">
+        <li class="slide right-part">
+                      <img src="images/alllogoes.png" class="img-responsive">
+        </li>
+        <li class="slide right-part">
+         <figure>
+               <img src="images/alllogoes.png" class="img-responsive">
+        </figure>
+          
+        
+        
+        <!--<li class="slide">
+          <figure>
+      
+            <img src="img/super-squirrel.png" alt="flying super squirrel">
+          </figure>
+        </li>-->
+      </ul>
+   
+    </div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class=" footer_bf">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 col-xs-12"><img src="images/skw.png" class=" img-responsive"></div>
+<div class="col-md-6 col-sm-6 col-xs-12 fot">
+<h2>Download the Globals App</h2>
+<p>for Your Smartphone</p>
+<div class="fot1">
+<div class="pull-left fot11"><span><img src="images/apple.png"></span><p>iPhone</p></div>
+<div class="pull-left fot11"><span><img src="images/ard.png"></span><p>Android</p></div>
+<div class="pull-left fot11"><span><img src="images/wind.png"></span><p>Win Phone</p></div>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="down">
+<div class="container">
+<div class="row">
+<div class="col-md-5 col-sm-5 col-xs-12 fot_aa">
+<h2>Download the Globals App</h2>
+<p>Globals.com is an easy way to get dining deals on the go. There are thousands of deals nationwide that never expire and can be exchanged anytime. Search by current location, city or zip. Then, buy a deal and use instantly! Get the most from the Globals.com app: </p>
+</div>
+<div class="col-md-7 col-sm-7 col-xs-12 ">
+
+<div class="fot1">
+<ul>
+<li><a href="#"><img src="images/fb.png"></a></li>
+<li><a href="#"><img src="images/t.png"></a></li>
+<li><a href="#"><img src="images/g.png"></a></li>
+<li><a href="#"><img src="images/p.png"></a></li>
+<li><a href="#"><img src="images/ins.png"></a></li>
+<li><a href="#"><img src="images/mts.png"></a></li>
+<li><a href="#"><img src="images/dots.png"></a></li>
+<li><a href="#"><img src="images/world.png"></a></li>
+
+
+</ul>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+<div class="footer_bc">
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-12 address">
+<div class="pull-left"><img src="images/pingaddress.png"></div><h2 class="globals">Globals</h2>
+<p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Read More...</p>
+<h4 style="color:#FFF !important;">Userful Links</h4>
+<p><a href="#">Home   /   Forums   /   Privacy Policy   /   Help Center   /   Terms of Use   /   Contacts</a></p>
+</div>
+
+<div class="col-md-4 col-sm-4 col-xs-12 foot2">
+<h4 style="color:#fff;">Recent News</h4>
+<div>
+<div class="pull-left"><img src="images/time.png"></div><div class="pull-left"><span>07 May, 2015</span><p>Mirum est notare quam littera gothica, <br>quam nunc putamus parum, anteposuerit litterarum</p><hr style="border-color:#33363a !important;"></div>
+</div>
+<div class="clr">
+<div class="pull-left"><img src="images/time.png"></div><div class="pull-left"><span>05 December, 2014</span><p style="color:#ccdb38;">Claritas est etiam processus dynamicus.</p><hr style="border-color:#33363a !important;"></div>
+</div>
+<div class="clr">
+<div class="pull-left"><img src="images/time.png"></div><div class="pull-left"><span>05 December, 2014</span><p>Eodem modo typi, qui nunc nobis videntur clari, sollemnes in<br> futurum. </p><hr style="border-color:#33363a !important;"></div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 foot2">
+<h4 style="color:#fff;">Email Newsletters</h4>
+<p>Sign Up for Our Newsletter to get Latest Updates and Offers. Subscribe <br>to receive news in your inbox. </p>
+<div class="footer_f">
+<div class="clr border_sty2"><input type="text" autofocus="" required="" tabindex="1" placeholder="Full Name" class="form_textarr"></div>
+
+<div class="clr border_sty"><input type="text" autofocus="" required="" tabindex="1" placeholder="Email Address" class="form_textarr"></div>
+
+<button name="submit" type="submit" id="contact-submit">Subscribe Now</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+</div>
+<div class="footb"><p>© 2015 Directory Portal Globals   /   Designed by ThemeFire   /   Only for Envato Market</p></div>
+
+<p id="back-top">
+		<a href="#top"><span></span></a>
+	</p>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script type='text/javascript' src='slider/jquery.min.js'></script>
+    <script type='text/javascript' src='slider/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='slider/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='slider/camera.min.js'></script>
+    
+    
+    	
+	<!--	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>-->
+		<script src="js2/responsiveTabs.js"></script>
+		<script>
+		$(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+		</script>
+        
+        
+    
+    <script>
+		jQuery(function(){
+			
+		
+
+			jQuery('#camera_wrap_2').camera({
+				height: '400px',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: true
+			});
+		});
+	</script>
+    
+    
+
+  <script type="text/javascript" src="js/jquery.glide.min.js"></script>
+  
+    <script type="text/javascript">
+$(function(){
+  $('.slider').glide({
+    autoplay: 3500,
+    hoverpause: true, // set to false for nonstop rotate
+    arrowRightText: '&rarr;',
+    arrowLeftText: '&larr;'
+  });
+});
+</script>
+</body>
+</html>

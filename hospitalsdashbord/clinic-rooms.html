@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Clinic-Rooms</title>
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/core.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   </head>
+   <body class="hos bodyallvr">
+      <nav id="sidebaradi" class="active side-nav-cure">
+         <a href="index.html" class="logocure"> <img src="images/indexpageicons/logo.svg"/> </a>
+         <ul class="list-unstyled components mb-5">
+            <li class="active home_icon" > <a href="index.html" data-toggle="tooltip" data-placement="right" title="Home"> <span class="homeiconclss" > <img  src="./images/indexpageicons/home_line.svg"/> </span>  Home</a> </li>
+            <li class="inner_icon"> <a href="appointments.html" data-toggle="tooltip" data-placement="right" title="Appointments"> <span> <img src="./images/indexpageicons/reports_white.svg"/> </span> Appoinments</a> </li>
+            <li class="inner_icon"> <a href="in-patient-list.html" data-toggle="tooltip" data-placement="right" title="In-patient-list"> <span> <img  src="./images/indexpageicons/ipdlist.svg"/> </span>IPD List</a> </li>
+            <li class="inner_icon"> <a href="out-patient-list.html" data-toggle="tooltip" data-placement="right" title="Out-patient-list"> <span> <img  src="./images/indexpageicons/outpatient.svg"/> </span>OPD List</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Pharmacy"> <span> <img  src="./images/indexpageicons/pharma.svg"/> </span>Pharmacy</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Diagnostic Center"> <span> <img  src="./images/indexpageicons/diagnostic.svg"/> </span>Diagnostic Center</a> </li>
+            <li class="inner_icon"> <a href="clinic-users.html" data-toggle="tooltip" data-placement="right" title="Patients"> <span> <img  src="./images/indexpageicons/patients.svg"/> </span> Patients</a> </li>
+            <li class="inner_icon"> <a href="clinic-admin.html" data-toggle="tooltip" data-placement="right" title="Admin"> <span> <img  src="./images/indexpageicons/admin.svg"/> </span>Admin</a> </li>
+            <li class="inner_icon"> <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Profile"> <span> <img  src="./images/indexpageicons/profile.svg"/> </span> Profile</a> </li>
+         </ul>
+      </nav>
+      <header class="bc_topmenu cure-main-div">
+         <div class="container-fulid">
+            <div class="row myrownew">
+               <div class="col-md-1 col-sm-12 col-xs-12 loge-cure">
+                  <div class="d-flex">
+                     <nav class="navbar navbar-expand-lg navbar-light">
+                        <button type="button" id="sidebaradiCollapse" class="btn btn-primary bc_topmenubtn"> <i class="fa fa-bars"></i> <span class="sr-only">Toggle Menu</span> </button>
+                     </nav>
+                     
+                     <div><img class="logo_mobile mobile_logo_320" src="images/curemetriclogocolor.svg"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <div class="allflex">
+                     <div class="mt-3">
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                           <label class="form-check-label" for="inlineRadio1">OPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">IPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">Emergency</label>
+                        </div>
+                     </div>
+                     <div class="topnav">
+                        <div class="search-container">
+                           <form action="#" class="">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="mrrs">
+                        <a href="#" data-toggle="modal" data-target="#newpatient">
+                           <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+                           <div class="float-left mt-1">
+                              
+                              New Patient
+                           
+                           </div>
+                        </a>
+                     </div>
+
+
+                     <div class="modal modal-right fade modlcure" id="newpatient" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content ">
+                              <div class="modal-header popupbackground">
+                                 <h5 class="modal-title">
+                                    <span class="float-left">
+                                       <div class="iconinnerbc_popup">
+                                          <img class="creat_rooms" src="images/inner_pages_icons/doctor.svg">
+                                       </div>
+                                    </span>
+                                    <span class="spaneeditem2">
+                                       Create User
+                                    </span>
+                                 </h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body modal-bodycure">
+                                 <div class="container user-curetab">
+                                    <div class="row mt-2 formgropnew">
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Username <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Email ID<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Email ID">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">First Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Middle Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Last Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Emergency Contact Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Phone Number<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                       </div>
+                                    
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">DOB (MM/DD/YYYY)<b>*</b></label>
+                                          <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Blood Group<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>A+</option>
+                                                      <option>B+</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Gender<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Male</option>
+                                                      <option>Female</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                      
+                                  
+                                  
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Zip/Pin Code<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Zip/Pin Code">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Country Code<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>IN</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Postal Location<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Enter Postal Location</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street1<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street1">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street2<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street2">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">City<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="City">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">State<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="State">
+                                       </div>
+                                       
+
+
+                                    
+                                       </div>
+                                    
+                                    <div class="vime">
+                                       <button type="button" class="btn butoon2 btn-primary al  button_code">
+                                          <a href="#">
+                                             <i class="plusicon fas fa-plus" src="./images/medicalhistory/plus.png"></i>Add User
+                                             </a>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- <div class="modal-footer modal-footer-fixed">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 logs">
+                  <div class=" cure_span_pad">
+                     <span class="span1">Last login 09-Jan-2023 11:17 AM</span> <span class="quastion span_icons"> <a href="#"><i class="fa fa-question"></i></a></span> <a href="#" class="notification">
+                     <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#notification"> <span><i class="fa fa-bell"></i></span></button>
+                     <span class="badge">3</span> </a> 
+                    <a href="#">
+                        <div class="d-flex">
+                           <span class="cure_span_pad ">
+                              
+                              <i class="fas fa-user profilemr profilecolor"></i>
+                           
+                           </span> 
+                           <!-- <span class=" usertext">
+                              <p class="font_wight_bold">Adinarayana</p>
+                              <p class="color_red ">28 years - Male </p>
+                           </span> -->
+                        </div>
+                     </a>
+                     <span class="span_icons ml-2"><a href="#"><i class="fas fa-sign-out-alt"></i></a></span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div role="main" class="cure-main-div">
+
+         
+<div class="container mysearch">
+   <div class="row">
+      <div class="topnav">
+         <div class="search-container">
+            <form action="#" class="">
+               <input type="text" placeholder="Search.." name="search">
+               <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+         </div>
+      </div>
+      <div class="mrrs">
+         <a href="#" data-toggle="modal" data-target="#newpatient">
+            <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+            <div class="float-left mt-1">
+               
+               New Patient
+            
+            </div>
+         </a>
+      </div>
+   </div>
+   
+   </div>
+   
+   
+         <!-- Page Content  -->
+         <div class="clearfix bcforall">
+            <section>
+               <div class="container-fluid cont">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <ol class="breadcrumb breadcrumbpro breadcrums">
+                           <li class="breadcrumb-item">
+                              <a href="index.html">
+                              <img src="images/inner_pages_icons/breadcrumb.svg"></a>
+                           </li>
+                           <li class="breadcrumb-item active" aria-current="page">Rooms</li>
+                        </ol>
+                        <div class="rooms_bc cure-tabtab">
+                           <div class="container">
+                              <div class="row mb-2">
+                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 d-flex align-items-center">
+                                    <h5 class="cure-taballapp room">
+                                       <span>
+                                       <img class="rooms" src="./images/inner_pages_icons/rooms.svg">
+                                       </span><b>Rooms</b>
+                                    </h5>
+                                 </div>
+                                 <div class="col-lg-9 col-md-9  col-sm-6  col-xs-6 topnav">
+                                    <div class="float-right font_wight_bold">
+                                       <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1" data-toggle="modal" data-target="#right_modal_room">  <i class="clicroom fas fa-plus" ></i> Add Room
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="linedo"></div>
+                           <div class="container">
+                              <div class="clinictab">
+                                 <h3 class="float-left mt-1">1st Floor</h3>
+                                 <!-- <p class="float-right text-info btn btn-light  mr-1 mt-1">General ward</p> -->
+                              </div>
+                              <div class="row mt-4">
+                                 <div class="col-md-12 col-sm-12 col-xs-12 clinich4">
+                                    <!-- <h4>superluxury</h4> -->
+                                    <ul class="roomsul_bc">
+                                       <li>
+                                          <h6 class="bookedbedprice">  <i class="redruppe fas fa-rupee-sign"></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="booked_bed" src="./images/inner_pages_icons/booked_bed.svg">
+                                          </div>
+                                          <div class="numberbc numberbc_booked">icu1-0012</div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew">
+                                          <div class="box333">
+                                             <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                             <div class="text-center">
+                                                <div class="tooltiproom"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                             </div>
+                                             <div class="numberbc">icu1-0012</div>
+                                          </div>
+                                       </li>
+                                       <li class="wrappernew lastlipad">
+                                          <div class="box333">
+                                             <b class="tooltiproom">
+                                                <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                                <div class="text-center"> 
+                                                   <img class="bed_icon" src="./images/inner_pages_icons/bed.svg">
+                                                </div>
+                                                <div class="numberbc">icu1-0012</div>
+                                                <span>
+                                                   <div><b>Beds Available:2</b></div>
+                                                   <div><b>Patient Attendants:1</b></div>
+                                                </span>
+                                             </b>
+                                          </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="clinictab">
+                                 <h3 class="float-left mt-1">2nd Floor</h3>
+                                 <!-- <p class="float-right text-info btn btn-light  mr-1 mt-1 display-6">Normal</p> -->
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 col-sm-12 col-xs-12 clinich5">
+                                    <!-- <h4>Non-Ac</h4> -->
+                                    <ul class="roomsul_bc">
+                                       <li>
+                                          <h6><i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6 class="bookedbedprice">  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="booked_bed" src="./images/inner_pages_icons/booked_bed.svg">
+                                          </div>
+                                          <div class="numberbc numberbc_booked">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li class="lastlipad">
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon2" src="./images/inner_pages_icons/bed_color_blue.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="clinictab">
+                                 <h3 class="float-left mt-1">3rd Floor</h3>
+                                 <!-- <p class="float-right text-info btn btn-light  mr-1 mt-1">opd</p> -->
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 col-sm-12 col-xs-12 clinich5">
+                                    <!-- <h4>AC</h4> -->
+                                    <ul class="roomsul_bc">
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6 class="bookedbedprice">  <i class="redruppe fas fa-rupee-sign"></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="booked_bed" src="./images/inner_pages_icons/booked_bed.svg">
+                                          </div>
+                                          <div class="numberbc numberbc_booked">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                       <li>
+                                          <h6>  <i class="redruppe fas fa-rupee-sign" ></i>450</h6>
+                                          <div class="text-center"> 
+                                             <img class="bed_icon3" src="./images/inner_pages_icons/bed_color_blue_light.svg">
+                                          </div>
+                                          <div class="numberbc">icu1-0012</div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal modal-right fade modlcure" id="right_modal_room" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content ">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup">
+                                             <img class="creat_rooms" src="images/inner_pages_icons/creat_room.svg">
+                                          </div>
+                                       </span>
+                                       <span class="spaneeditem2">
+                                       Creat Room
+                                       </span>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body modal-bodycure">
+                                    <div class="container user-curetab">
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Room Number <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Room Number">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Enter Price<b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Price">
+                                          </div>
+                                       </div>
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Room Type <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Room Type">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Number Of Beds <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Number Of Beds">
+                                          </div>
+                                       </div>
+                                       <div class="row mt-2">
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Floor Number <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Patient Attendants <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Number">
+                                          </div>
+                                       </div>
+                                       <div class="row mt-2">
+                                          <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-3">
+                                             <label for="" class="col-form-label">Description <b>*</b></label>
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Enter Description">
+                                          </div>
+                                       </div>
+                                       <div class="vime">
+                                          <button type="button" class="btn butoon2 btn-primary al  button_code"><a href="#"><i class="plusicon fas fa-plus" src="./images/medicalhistory/plus.png"></i></a>Create</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="modal-footer modal-footer-fixed">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Headtop_notification_all -->
+                        <div class="modal modal-right fade modlcure" id="notification" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content ">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                       </span>
+                                       <span class="spaneeditem2"> Notifications </span> 
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                 </div>
+                                 <div class="modal-body modal-bodycure">
+                                    <section id="tabs " class="myaltabs">
+                                       <div class="container modal-bodycure">
+                                          <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                          <div class="container">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                                 <!-- <div class="modal-footer modal-footer-fixed">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal fade modlcurenew todayapp2" id="regular_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                           <div class="modal-dialog modelcon  modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                       </span>
+                                       <span class="spaneeditem2"> Notifications View </span> 
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="notifications_bc2">
+                                       <div class="float-left mrl10"><i class="cure-noti fas fa-calendar-check"></i></div>
+                                       <div class="float-left">
+                                          <div class="mrl10">
+                                             <p>Reschedule Appointment <b style="font-weight: normal;"><i class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                          </div>
+                                          <div>
+                                             <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Headtop_notification_all -->
+                        <div class="main-footer profileprofilemain-footer-cure">
+                           <div class="col-md-12 col-sm-12 text-center">
+                              <div class="container-fluid mt-3">
+                                 <p class="float-left"> Have a question? Call us : +1800-266-18023</p>
+                                 <p class="float-right"> Need support? Mail us : info@cure-metric.com</p>
+                              </div>
+                           </div>
+                        </div>
+                        <footer class="footer_padding">
+                           <nav class="mobile-bottom-nav">
+                              <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="appointments.html">
+
+                                    
+                                       <i class="icon_bottom fas fa-file-alt"  id="image"></i>
+                                       <p>Add Doctors</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="in-patient-list.html">
+                                       <i class=" icon_bottom fas fa-user-injured"></i>
+                                       <p>Ambulatory</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="out-patient-list.html">
+                                       <i class=" icon_bottom fas fa-procedures"></i>
+                                       <p>Base Schedule</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content"> <a href="index.html"> <i class="mobile_icon_home fas fa-home"></i></a> </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="clinic-users.html">
+                                       <i class=" icon_bottom fas fa-users"></i>
+                                       <p>Payments</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="clinic-admin.html">
+                                       <i class="icon_bottom fas fa-user-tie"></i>
+                                       <p>Bloodbank</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="profile.html">
+                                       <i class="icon_bottom fas fa-user-plus"></i>
+                                       <p>Profile</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </nav>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal modal-right fade modlcure" id="notification" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                  <div class="modal-dialog" role="document">
+                     <div class="modal-content ">
+                        <div class="modal-header popupbackground">
+                           <h5 class="modal-title">
+                              <span class="float-left">
+                                 <div class="iconinnerbc_popup">
+                                    <img class="creat_rooms" src="images/inner_pages_icons/bell.svg">
+                                 </div>
+                              </span>
+                              <span class="spaneeditem2">
+                              Notifications
+                              </span>
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        <div class="modal-body modal-bodycure">
+                           <section id="tabs " class="myaltabs">
+                              <div class="container modal-bodycure">
+                                 <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc notifications_odd">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right">
+                                                <i class="notification_eye fas fa-eye notieyeyye"></i>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye"></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc notifications_odd">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye"></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye"  ></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <div class="notifications_bc notifications_odd">
+                                             <div class="float-left" style="margin-left: 10px;"><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                             <div class="float-left">
+                                                <div style="margin-left: 10px;">
+                                                   <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b style="font-weight: normal;"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                </div>
+                                                <div>
+                                                   <h3>Your appointment successfully placed with  <strong>Radiologist Radha </strong></h3>
+                                                </div>
+                                             </div>
+                                             <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye"></i></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </section>
+                        </div>
+                        <!-- <div class="modal-footer modal-footer-fixed">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save changes</button>
+                           </div> -->
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <script>
+         (function($) {
+         
+         "use strict";
+         
+         var fullHeight = function() {
+         
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+               $('.js-fullheight').css('height', $(window).height());
+            });
+         
+         };
+         fullHeight();
+         
+         $('#sidebaradiCollapse').on('click', function () {
+            $('#sidebaradi').toggleClass('active');
+            $('body').toggleClass('nav-expanded');
+         });
+         
+         })(jQuery);
+      </script> 
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip2"]').tooltip2();   
+         });
+      </script>
+      <script>
+         var navItems = document.querySelectorAll(".mobile-bottom-nav__item");
+          navItems.forEach(function (e, i) {
+            e.addEventListener("click", function (e) {
+              navItems.forEach(function (e2, i2) {
+                e2.classList.remove("mobile-bottom-nav__item--active");
+              });
+              this.classList.add("mobile-bottom-nav__item--active");
+            });
+          });
+          
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip2"]').tooltip2();   
+         });
+      </script>
+   </body>
+</html>

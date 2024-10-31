@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="_x3C_Layer_x3E_" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g id="doctor_x2C__person_x2C__man_x2C__avatar">
+	<path id="XMLID_2343_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M7.504,21.165L5.59,21.96c-1.869,0.77-3.09,2.59-3.09,4.62v3.92"/>
+	<path id="XMLID_137_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M12.5,15.363v2.057c0,1.01-0.609,1.93-1.54,2.31l-1.433,0.595"/>
+	<path id="XMLID_135_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M20.497,19.422C19.88,18.958,19.5,18.217,19.5,17.42v-2.045"/>
+	<path id="XMLID_2344_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M29.5,30.5v-3.92c0-2.03-1.221-3.85-3.09-4.62l-3.91-1.624"/>
+	
+		<polyline id="XMLID_2339_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="   20,18.92 16,23.42 12.01,18.91  "/>
+	<path id="XMLID_2501_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="   M21.82,9.9c0-0.55-0.301-1.03-0.75-1.29c0.02-0.28,0.039-0.56,0.05-0.83C21.279,4.91,19,2.5,16.13,2.5h-0.26   c-2.87,0-5.149,2.41-4.99,5.28c0.021,0.27,0.03,0.55,0.05,0.82c-0.439,0.27-0.75,0.75-0.75,1.3c0,0.88,0.42,1.68,1.1,2.19   c0.171,1.18,0.41,2.13,0.721,2.6c0.641,0.96,1.95,2.38,2.87,2.81h2.26c0.91-0.43,2.22-1.85,2.86-2.8c0.32-0.47,0.56-1.43,0.74-2.61   C21.4,11.58,21.82,10.78,21.82,9.9z"/>
+	<g id="XMLID_2353_">
+		<circle fill="none" stroke="#ffffff" stroke-miterlimit="10" cx="9.5" cy="29" r="1.5"/>
+		<path id="XMLID_2461_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="    M20.5,30.5c-0.553,0-1-0.448-1-1V26c0-1.657,1.344-3,3-3l0,0c1.656,0,3,1.343,3,3v3.5c0,0.552-0.447,1-1,1"/>
+		<path id="XMLID_2426_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="    M12.5,17c-1.656,0-3,1.343-3,3v7.5"/>
+		<path id="XMLID_2341_" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="    M19.5,17c1.656,0,3,1.343,3,3v3"/>
+	</g>
+</g>
+</svg>

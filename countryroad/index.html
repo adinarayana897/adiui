@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Country Road</title>
+<link href="css/sty.css" rel="stylesheet" type="text/css" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choise Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+</head>
+
+<body>
+<div class="page">
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-sm-6 pp">
+<hr>
+<h1 class="h1_width">Country road</h1> <h6>biker`s cafe </h6>
+<img src="images/img_cap.jpg" class="img-responsive mrg">
+<address class="text-center">USA - LOS ANGELES,
+901 EAST E STREET,
+WILMINGTON, CA 90744
+E -MAIL: MAIL@DEMOLINK.ORG</address>
+<h2>(800) 123 1234 </h2>
+<hr>
+</div>
+
+<div class="col-md-6 col-sm-6" style="padding-left:0px !important;">
+<div class="bc">
+<div id="fdw" class="menu_480">
+
+				<!--nav-->
+					<nav>
+						<ul class="menu_ra">
+                        <hr>
+							<li class="current"><a href="#">home<span class="arrow"></span></a>
+								<!--<ul style="display: none;" class="sub_menu">
+									<li class="arrow_top"></li>
+									<li><a class="subCurrent" href="http://www.freshdesignweb.com">Home Service</a></li>
+									<li><a href="http://www.freshdesignweb.com">Home Responsive</a></li>
+								</ul>-->
+							</li>
+							<li><a href="#">about</a></li>
+							<li><a href="#">services</a></li>
+							<li>
+								<a href="#">portfolio<span class="arrow"></span></a>
+								<!--<ul style="display: none;" class="sub_menu">
+									<li class="arrow_top"></li>
+									<li><a href="http://www.freshdesignweb.com">Portfolio 3 </a></li>
+									<li><a href="http://www.freshdesignweb.com">Portfolio 4 </a></li>
+									<li><a href="http://www.freshdesignweb.com">Portfolio Single</a></li>
+									<li><a href="http://www.freshdesignweb.com">Portfolio Two</a></li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="#">blog<span class="arrow"></span></a>
+								<!--<ul style="display: none;" class="sub_menu">
+									<li class="arrow_top"></li>
+									<li><a href="http://www.freshdesignweb.com">Design</a></li>
+									<li><a href="http://www.freshdesignweb.com/category/html5">HTML5</a></li>
+									<li><a href="http://www.freshdesignweb.com/category/css-html">CSS3</a>
+									</li><li><a href="http://www.freshdesignweb.com/category/ajax-jquery">jQuery</a></li>
+								</ul>-->
+							</li>
+							<li><a href="#">contact</a></li>
+                                           <hr>
+						</ul>
+					</nav>
+		</div>
+        
+        <h1 class="h1text">THE ONLY PURPOSE BUILT BIKERS CAFE IN THE LA</h1>
+        
+        <div class="tec">
+       
+       <div class="bc_text_text">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+       <h4>AUTOMOTO RACING</h4>
+<h1>IS OPEN FOR TYRES, SERVICE & MOT'S</h1>
+       </div>
+       
+       </div>
+       
+       
+       
+   
+        </div>
+        </div>
+        
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div class="page">
+
+<div class="container">
+
+<div class="row">
+<div class="col-md-10 col-sm-12 col-xs-12  well1 mrg_i2">
+<img src="images/img_img.jpg" class="img-responsive"></div>
+<div class="col-md-5 col-sm-5 col-xs-12 well1 bpt adi_style">
+<h4>Grilled bbq <br>steaks</h4>
+<b>and more than 50 traditional dishes </b>
+<p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. </p>
+<a href="#" class="btn1">Read More...</a>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="container">
+
+<div class="row">
+<div class="col-md-11 col-sm-12 col-xs-12  well1 mrg_i3">
+<img src="images/img_img2.jpg" class="img-responsive"></div>
+<div class="col-md-5 col-sm-5 col-xs-12 well1 bpt">
+<b>more than</b>
+<h4>30 sorts of national<br>beers</h4>
+<p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. </p>
+<a href="#" class="btn1">Read More...</a>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<div class="container">
+
+<div class="row">
+<div class="col-md-10 col-sm-12 col-xs-12  well1 mrg_i2">
+<img src="images/img_img3.jpg" class="img-responsive"></div>
+<div class="col-md-5 col-sm-5 col-xs-12 well1 bpt">
+<h4>Grilled bbq <br>steaks</h4>
+<b>and more than 50 traditional dishes </b>
+<p>Praesent vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. </p>
+<a href="#" class="btn1">Read More...</a>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+</div>
+<div class="bc_fotter">
+<div class="container">
+<div class="row bbc">
+<div class="col-md-4 col-sm-5 col-xs-12">
+<strong>Jan. 20</strong>
+<h3 class="ttn">
+                            <a href="#">Win a bottle <br> of whiskey</a>
+                        </h3>
+                        <h5>
+                            NIGHT FOOTBALL TAILGATE <br>
+                            PARTY PRE-GAME
+                        </h5>
+                        <p>Praesent vestibulum aenean nonummy
+                           hendrerit mauris. Cum sociis natoque
+                           penatibus et magnis dis parturient montes
+                           ascetur ridiculus mus. Nulla dui. </p>
+</div>
+<div class="col-md-4 col-sm-5 col-xs-12">
+<strong>Jan. 20</strong>
+<h3 class="ttn">
+                            <a href="#">Win a bottle <br> of whiskey</a>
+                        </h3>
+                        <h5>
+                            NIGHT FOOTBALL TAILGATE <br>
+                            PARTY PRE-GAME
+                        </h5>
+                        <p>Praesent vestibulum aenean nonummy
+                           hendrerit mauris. Cum sociis natoque
+                           penatibus et magnis dis parturient montes
+                           ascetur ridiculus mus. Nulla dui. </p>
+</div>
+<div class="col-md-4 col-sm-5 col-xs-12">
+<strong>Jan. 20</strong>
+<h3 class="ttn">
+                            <a href="#">Win a bottle <br> of whiskey</a>
+                        </h3>
+                        <h5>
+                            NIGHT FOOTBALL TAILGATE <br>
+                            PARTY PRE-GAME
+                        </h5>
+                        <p>Praesent vestibulum aenean nonummy
+                           hendrerit mauris. Cum sociis natoque
+                           penatibus et magnis dis parturient montes
+                           ascetur ridiculus mus. Nulla dui. </p>
+</div>
+</div>
+
+
+
+</div>
+
+
+</div>
+</body>
+</html>

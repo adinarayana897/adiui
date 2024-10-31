@@ -1,0 +1,90 @@
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+*{margin:0px; padding:0px;}
+
+
+body{font-family: 'Oswald';}
+
+p{font-family: 'Lato'; font-size:13px;}
+
+.clr{ clear:both;}
+
+.container{
+	width: 96%;	
+	max-width: 1170px;
+	margin: auto;
+	/*padding: 2%;*/
+	}  
+
+.respoimg{ max-width:100%; display:block; height:auto; }
+
+
+.logo{ width:27%; float:left;}
+
+.nav{width:73%; float:right;}
+		
+	.banner{    background-color: #252525;
+    background-image:url(../img/banner.jpg);
+    background-position: center right;     background-size: cover;
+    background-repeat: no-repeat;     padding: 308px 0 323px; }	
+	
+	
+	.sales{width:28%; float:left; margin-left:2%;}
+	
+	.offering{width:28%;  float:left; margin-left:2%;}
+	
+	.support{width:28%;  float:left; margin-left:2%;}
+	
+	.space{margin-top:5%;}
+	
+	.fleft{float:left;}
+	.fright{float:right;}
+	
+	.mrg-right{padding-right: 27px;}
+	
+	.sales h1 {
+    margin-bottom: 9%;
+}
+
+.offering h1 {
+    margin-bottom: 9%;
+}
+	.support h1 {
+    margin-bottom: 9%;
+}
+
+.disp{ display:table-cell;}
+		
+		
+		@media screen and (max-width: 990px) {
+			
+			.logo{ width:100% !important; float:left; text-align:center;}
+			
+			.logo img{margin:auto; text-align:center;}
+			
+			.nav{width:100%; float:none !important;}
+			
+				
+	.sales{width:94% !important; float:none !important; margin-left:2%; margin-bottom:5%; text-align:center;}
+	
+	.offering{width:94% !important;  float:none !important; margin-left:2%; margin-bottom:5%; text-align:center;}
+	
+	.support{width:94% !important;  float:none !important; margin-left:2%; margin-bottom:5%; text-align:center;}
+	.space span{float:none !important;}
+	
+		.sales h1 {
+    margin-bottom: 2% !important;
+}
+
+.offering h1 {
+    margin-bottom: 2% !important;
+}
+	.support h1 {
+    margin-bottom: 2% !important;
+			
+		}
+
+		}

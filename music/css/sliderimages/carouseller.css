@@ -1,0 +1,217 @@
+/*carouseller.js 0.32b https://github.com/shrue348/responsive.carouseller Open source under the MIT License. Copyright © 2015-2017 Aleksander Alekseev All rights reserved.*/
+
+
+body {
+  background-color: #fefefe;
+font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #444444; }
+  
+.carouseller:before, .carouseller:after {  content: " ";  display: table;}
+.carouseller:after { clear: both;}
+.carouseller { position: relative;}
+
+.carouseller [class*="car__"]{
+	display: inline-block; 
+	position: relative;
+    margin-left: 0.2564102564102564% !important;
+    *margin-left: 0.25109110747408616% !important;
+    float: left;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.carouseller [class*="car__"]:first-child  { margin-left: 0 !important;}
+.carouseller [class*="car__"]:nth-child(n+7) { display: none;}
+
+.carouseller .car__by5 { width: 1.793789743589745%;}
+.carouseller .car__12 { width: 10%;}
+.carouseller .car__6 { width: 5.8837948717948715%;}
+.carouseller .car__5 { width: 4.8837948717948715%;}
+.carouseller .car__4 { width: 3.1703931623931625%;}
+.carouseller .car__3 { width: 1.8%;}
+.carouseller .car__2 { width: 10%;}
+.carouseller .car__1 { width: 0.5982905982905983%;}
+
+.carouseller .carouseller__list { position: relative; width: 997.4358974358974%;}
+.carouseller .carouseller__wrap { overflow: hidden; position: relative; margin: 0 12px}
+
+.carouseller .carouseller__left, 
+.carouseller .carouseller__right {
+	position: absolute; 
+	margin: 0; 
+	bottom: 25px;
+    background: none repeat scroll 0 0 transparent;
+    font-size: 25px;
+    opacity: 0.5;
+    text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+.carouseller .carouseller__left {    top: -62px;
+border: 0;
+right: 38px;
+
+}
+.carouseller .carouseller__right {      top: -62px;
+border: 0;
+right: 19px;
+}
+ 
+
+.carouseller .carouseller__left:hover, .carouseller .carouseller__:hover { opacity: 0.8;}
+
+
+/*------Responsive-----------*/
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.carouseller .car__by5,
+	.carouseller .car__12,
+	.carouseller .car__6,
+	.carouseller .car__4,
+	.carouseller .car__3,
+	.carouseller .car__2,
+	.carouseller .car__1 { width: 3.1623931623931625%;}
+	
+	.carouseller .car__2{ width: 10.162%;}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.carouseller .car__by5,
+	.carouseller .car__12,
+	.carouseller .car__6,
+	.carouseller .car__4,
+	.carouseller .car__3,
+	.carouseller .car__2,
+	.carouseller .car__1 { width: 4.8717948717948715%;}
+	
+	.carouseller .car__2{ width: 10.162%;} 
+	
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.carouseller .car__by5,
+	.carouseller .car__12,
+	.carouseller .car__6,
+	.carouseller .car__4,
+	.carouseller .car__3,
+	.carouseller .car__2,
+	.carouseller .car__1 { width: 10%;}
+}
+
+@media (min-width: 380px) and (max-width: 600px) { 
+.car__2 .col-sm-4{ width:33.3333% !important;}
+
+#second .row{ margin-bottom:19px;}
+
+}
+
+
+@media (min-width: 990px) and (max-width: 1600px) { 
+.emright{ display:none;}
+
+}
+@media (min-width: 320px) and (max-width: 990px) { 
+.emright2{ display:none !important;}
+.emright3{ display:none !important;}
+
+}
+
+
+@media (min-width: 600px) and (max-width: 1200px) { 
+
+#second .row{ margin-bottom:19px;}
+
+.imgborder_new b {
+    color: #464d53;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-size: 10px !important;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+.imgborder_new p {
+    color: #aeb2b5;
+    letter-spacing: 0;
+    text-transform: capitalize;
+ font-weight: normal;
+padding-top: 7px;
+margin-bottom: 0;
+font-size: 9px !important;
+font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.imgborder_new img {
+    box-shadow: 3px 3px 5px #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    width: 82px !important;
+}
+}
+
+
+.padding_top{padding-top: 11px;}
+
+.imgborder img{box-shadow: 3px 3px 5px #ccc;
+border-radius: 3px;
+margin-bottom: 15px; width: 100%;}
+
+
+.imgborder_new img{box-shadow: 3px 3px 5px #ccc;
+border-radius: 3px; margin-right: 10px;
+margin-bottom: 15px; width: 56px;}
+
+
+.imgborder_new b {
+    color: #464d53;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-size: 11px;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+.imgborder_new p {
+    color: #aeb2b5;
+    letter-spacing: 0;
+    text-transform: capitalize;
+ font-weight: normal;
+padding-top: 3px;
+margin-bottom: 0;
+font-size: 9px;
+font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+.imgborder b {
+    color: #464d53;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    font-weight: 600;
+}
+.imgborder p {
+    color: #aeb2b5;
+    letter-spacing: 0;
+    text-transform: capitalize;
+ font-weight: normal;
+padding-top: 7px;
+margin-bottom: 0;
+font-size:12px;
+font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.emright2 em{ font-size:18px; margin-right:10px;}
+
+.em{ font-size:18px; margin-right:10px; color:#3974fe;}
+
+.em2{ font-size:18px; margin-right:10px; color:#ff6b6c;}
+
+.em3{ font-size:18px; margin-right:10px; color:#4d4d4d;}
+
+/* This can be deleted */
+/*[class*="car__"] { text-align: center; font-size: 30px; font-weight: bold; background-color: #e5e5e5;}
+h1 {font-size: 40px; margin-bottom: 30px;}
+.carouseller { margin-bottom: 20px;}*/
