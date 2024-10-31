@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ADI UI</title>
+<link rel="shortcut icon" href="images/color.gif" type="image/x-icon"/>
+
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/responsive-slider.css" rel="stylesheet">
+
+       <link rel="stylesheet" href="css/responsive-tabs.css">
+
+
+<script>;(function($) {
+    "use strict";
+    $(document).ready(function() {
+        $('#access').on('touchstart click', '.skip-link', function(event) {
+            $(this).toggleClass('focus');
+            $($(this).attr('href')).toggleClass('target');
+            event.preventDefault();
+        }).find('.skip-link').append('<span>'+$('#menu .active').text()+'</span>');
+    });
+})(jQuery);</script>
+</head>
+
+<body>
+<div class="over_flow">
+<div class="bc">
+<div class="top">
+
+<div class="container">
+
+<div class="row">
+
+
+<div class="logo"><a href="#" class="adi"><figure class="animation-wrapper">
+  <div class="pie-piece1"></div>
+  <div class="pie-piece2"></div>
+  <div class="pie-piece3"></div>
+  <div class="pie-piece4"></div>
+  <svg width="40" height="60" viewBox="0 0 200 200">
+    <defs>
+        <filter id="blur" color-interpolation-filters="linear">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="11"/>
+        </filter>
+        <mask id="mask">
+            <circle cx="0" cy="0" r="90" fill="white"/>
+        </mask>
+        <linearGradient id="gloss" x2="0" y2="0.4">
+            <stop offset="0" stop-color="white" stop-opacity="0.5"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+
+    <g transform="translate(100,100)" mask="url(#mask)">
+        <g filter="url(#blur)">
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#c44"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#c09" transform="rotate(30)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#c0c" transform="rotate(60)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#90c" transform="rotate(90)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#44c" transform="rotate(120)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#09c" transform="rotate(150)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#0cc" transform="rotate(180)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#0c9" transform="rotate(210)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#4c4" transform="rotate(240)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#9c0" transform="rotate(270)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#cc0" transform="rotate(300)"/>
+            <polygon points="0,0, -100,-26.8, -100,26.8" fill="#c90" transform="rotate(330)"/>
+        </g>
+        <g transform="scale(0.9,0.9)">
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4"/>
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4" transform="rotate(60)"/>
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4" transform="rotate(120)"/>
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4" transform="rotate(180)"/>
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4" transform="rotate(240)"/>
+            <path d="M0,0C5,-61,-32,-86,-95,-90L-100,-46C-65,-53,-24,-35,0,0Z" fill="black" fill-opacity="0.4" transform="rotate(300)"/>
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0" to="360" dur="1.2s" repeatCount="indefinite"/>
+
+        </g>
+        <circle r="83" fill="url(#gloss)"/>
+        <circle r="90" fill="none" stroke="black" stroke-width="2"/>
+    </g>
+</svg>
+</figure><img src="images/logo.png"></a><span class="logo-s"></span></div>
+<div class="menu navbar-right">
+<nav class="text-center">
+ 
+  
+     <span class="right_adi"></span>
+       <div id="wrapper">
+    <nav role="navigation" id="access">
+ <a class="skip-link icon-reorder" title="Accéder au menu" href="#menu">Menu</a>
+    <ul id="menu">
+      <li class="active"><a class="icon-home" href="#home">Home</a></li>
+               <li><a class="icon-group" href="#aboutus">About Us</a></li>
+               <li><a class="icon-leaf" href="#myresume">My Resume</a></li>
+                <li><a class="icon-picture" href="#portfolio">Portfolio</a></li>
+                <li><a class="icon-envelope-alt" href="#blog">Blog</a></li>
+                 <li><a class="icon-picture" href="#contact">Contact</a></li>
+              
+          </ul>
+      </nav>
+</div>
+ </nav> 
+  
+</div>
+  
+</div>
+  
+</div>
+</div>
+
+</div>
+<div class="bc2">
+<div class="container">
+<div class="row">
+<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+        <div class="slides" data-group="slides">
+      		<ul>
+  	    		<li>
+              <div class="slide-body" data-group="slide">
+                <img src="images/slide-1.jpg">
+                <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+                 
+                  <!--<div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">With one to one swipe movement!</div>-->
+                </div>
+                <div class="caption img-html5" data-animate="slideAppearLeftToRight" data-delay="200">
+                  <img src="images/5yeras.png">
+                </div>
+               <!-- <div class="caption img-css3" data-animate="slideAppearLeftToRight">
+                  <img src="images/website.png">
+                </div>-->
+              </div>
+  	    		</li>
+  	    		<li>
+              <div class="slide-body" data-group="slide">
+                <img src="images/slide-2.jpg">
+                <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+                  <h2>Bootstrap Responsive<br> Design</h2>
+                  <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"></div>
+                </div>
+                <div class="caption img-bootstrap" data-animate="slideAppearDownToUp" data-delay="200">
+                <!--  <img src="images/bootstrap.png">-->
+                </div>
+                <div class="caption img-twitter" data-animate="slideAppearUpToDown">
+           <!--       <img src="images/twitter.png">-->
+                </div>
+              </div>
+  	    		</li>
+  	    		<li>
+              <div class="slide-body" data-group="slide">
+                <img src="images/slide-3.jpg">
+                <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+                 <!-- <h2>Custom animations</h2>-->
+                  <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300"></div>
+                </div>
+                <div class="caption img-jquery" data-animate="slideAppearDownToUp" data-delay="200">
+                <!--  <img src="images/jquery.png">-->
+                </div>
+              </div>
+  	    		</li>
+  	    	</ul>
+        </div>
+        <a class="slider-control left" href="#" data-jump="prev"><img src="images/arrow_left.png"></a>
+        <a class="slider-control right" href="#" data-jump="next"><img src="images/arrow_right.png"></a>
+        <div class="pages">
+          <a class="page" href="#" data-jump-to="1">1</a>
+          <a class="page" href="#" data-jump-to="2">2</a>
+          <a class="page" href="#" data-jump-to="3">3</a>
+        </div>
+    	</div>
+ </div>
+ <h2 class="text-center about_text element" id="aboutus">ABOUT US</h2>
+ <div class="col-md-3 col-sm3 col-xs-12 "><p class="pull-left"><div class="circle">
+					<h1 >ABOUT US</h1>
+				</div></p></div>
+  <div class="col-md-9 col-sm6 col-xs-12 about"><p>complete website designing and website development company based in Hyderabad, India. We offer a comprehensive list of services to enhance your web design and development which indeed helps improve your business with a user-friendly website design and development.complete website designing and website development company based in Hyderabad, India. We offer a comprehensive list of services to enhance your web design and development which indeed helps improve your business with a user-friendly website design and development.complete website designing and website development company based in Hyderabad, India. We offer a comprehensive list of services to enhance your web design and development which indeed helps improve your business with a user-friendly website design and development.complete website designing and website development company based in Hyderabad, India.</p></div>
+
+
+ </div>
+ </div>
+ 
+ <div class="bg_1">
+
+        <div class="container">
+            <div  class="row">
+                <div class="col-md-4 mrg_imgs text-center">
+                    <div class="image-holder">
+                   <div class="wrap2">
+        <div id="cube2" class="cube2 rotate-y">
+          <span class="face2 front2"><img src="images/2.png"></span>
+          <span class="face2 back2"><img src="images/3.png"></span>
+          <span class="face2 top2"><img src="images/1.png"></span>
+          <span class="face2 bottom2"><img src="images/4.png"></span>
+          <span class="face2 left2"><img src="images/5.png"></span>
+          <span class="face2 right2"><img src="images/6.png"></span>
+        </div>
+      </div>
+                    </div>
+                    <h4 class="circleh4">MY LOGO DESIGN</h4>
+                </div>
+                <div class="col-md-4 text-center">
+                     <section class="spinner-2">
+        <div class="spinner"><p class="round"><svg xml:space="preserve" enable-background="new 0 0 127.433 132.743" viewBox="0 0 127.433 132.743" height="132.743px" width="127.433px" y="0px" x="0px" xmlns:xlink="#" xmlns="#" id="Layer_1" version="1.1" class="phone">
+
+
+
+
+
+</svg><span class="number_my">9652184284</span></p></div>
+      </section>
+                </div>
+                <div class="col-md-4 mrg_imgs text-center">
+                    <div class="image-holder">
+                     <div class="wrap2">
+        <div id="cube2" class="cube2 rotate-x">
+          <span class="face2 front2"><img src="images/template_7.png"></span>
+          <span class="face2 back2"><img src="images/template_1.png"></span>
+          <span class="face2 top2"><img src="images/template_6.png"></span>
+          <span class="face2 bottom2"><img src="images/template_5.png"></span>
+          <span class="face2 left2"><img src="images/template_3.png"></span>
+          <span class="face2 right2"><img src="images/template_4.png"></span>
+        </div>
+      </div>
+                    </div>
+                    <h4 class="circleh3">MY TEMPLATE DESIGN</h4>
+                </div>
+            </div>
+                    <div class=" portfolio"><h4 class="element" id="portfolio">MY PORTFOLIO</h4><p>WHAT MY HAVE DONE</p></div>
+                    
+  
+        </div>
+  
+ </div>
+ <div class="container">
+<div class="row">
+                    <div class="col-md-9 col-sm-12 col-xs-12 tabs_marg">
+                    <div class="responsive-tabs">
+
+			<h2 class="tabsh2">Responsive</h2>
+			<div>
+			
+<p>
+    <div class="pull-left pro"><a href="images/img/responsive/1-big.jpg" class="img_dec_padding"><img src="images/img/responsive/1-small.jpg" alt="Pets" class="img_dec"></a>   <div class="text-center"><a href="http://adiui.in/pets/" target="_blank">Pets</a></div></div>
+
+ 
+
+     <div class="pull-left pro"><a href="images/img/responsive/2-big.jpg" class="img_dec_padding"><img src="images/img/responsive/2-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="http://adiui.in/countryroad/"  target="_blank" >Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/responsive/3-big.jpg" class="img_dec_padding" ><img src="images/img/responsive/3-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="http://adiui.in/commex/" target="_blank" >Commex</a></div></div>
+      
+</p>
+			</div>
+
+			<h2 class="tabsh2"> Logo Design</h2>
+			<div>
+				
+<p>
+
+     <div class="pull-left pro"><a href="images/img/logo/1-big.jpg" class="img_dec_padding"><img src="images/img/logo/1-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/logo/2-big.jpg" class="img_dec_padding" ><img src="images/img/logo/2-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/logo/3-big.jpg" class="img_dec_padding" ><img src="images/img/logo/3-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/logo/4-big.jpg" class="img_dec_padding" ><img src="images/img/logo/4-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/logo/5-big.jpg" class="img_dec_padding" ><img src="images/img/logo/5-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/logo/6-big.jpg" class="img_dec_padding" ><img src="images/img/logo/6-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+   
+</p>			</div>
+			
+			<h2 class="tabsh2">Template Design</h2>
+            
+			<div>
+			
+<p>
+ <div class="pull-left pro"><a href="images/img/templates/1-big.jpg" class="img_dec_padding"><img src="images/img/templates/1-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+ <div class="pull-left pro"><a href="images/img/templates/2-big.jpg" class="img_dec_padding"><img src="images/img/templates/2-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+ <div class="pull-left pro"><a href="images/img/templates/3-big.jpg" class="img_dec_padding"><img src="images/img/templates/3-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/templates/4-big.jpg" class="img_dec_padding" ><img src="images/img/templates/4-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/templates/5-big.jpg" class="img_dec_padding" ><img src="images/img/templates/5-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/templates/6-big.jpg" class="img_dec_padding" ><img src="images/img/templates/6-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/templates/7-big.jpg" class="img_dec_padding" ><img src="images/img/templates/7-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/templates/8-big.jpg" class="img_dec_padding" ><img src="images/img/templates/8-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  
+                   <div class="pull-left pro"><a href="images/img/templates/9-big.jpg" class="img_dec_padding"><img src="images/img/templates/9-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+ <div class="pull-left pro"><a href="images/img/templates/10-big.jpg" class="img_dec_padding"><img src="images/img/templates/10-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/templates/11-big.jpg" class="img_dec_padding" ><img src="images/img/templates/11-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/templates/12-big.jpg" class="img_dec_padding" ><img src="images/img/templates/12-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/templates/13-big.jpg" class="img_dec_padding" ><img src="images/img/templates/13-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/templates/14-big.jpg" class="img_dec_padding" ><img src="images/img/templates/14-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/templates/15-big.jpg" class="img_dec_padding" ><img src="images/img/templates/15-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  
+                   <div class="pull-left pro"><a href="images/img/templates/16-big.jpg" class="img_dec_padding"><img src="images/img/templates/16-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+   
+       <div class="pull-left pro"><a href="images/img/templates/17-big.jpg" class="img_dec_padding"><img src="images/img/templates/17-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/templates/18-big.jpg" class="img_dec_padding" ><img src="images/img/templates/18-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/templates/19-big.jpg" class="img_dec_padding" ><img src="images/img/templates/19-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/templates/20-big.jpg" class="img_dec_padding" ><img src="images/img/templates/20-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/templates/21-big.jpg" class="img_dec_padding" ><img src="images/img/templates/21-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/templates/22-big.jpg" class="img_dec_padding" ><img src="images/img/templates/22-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  
+                   <div class="pull-left pro"><a href="images/img/templates/23-big.jpg" class="img_dec_padding"><img src="images/img/templates/23-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>           
+                  
+         <div class="pull-left pro"><a href="images/img/templates/24-big.jpg" class="img_dec_padding"><img src="images/img/templates/24-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/templates/25-big.jpg" class="img_dec_padding" ><img src="images/img/templates/25-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/templates/26-big.jpg" class="img_dec_padding" ><img src="images/img/templates/26-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/templates/27-big.jpg" class="img_dec_padding" ><img src="images/img/templates/27-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/templates/28-big.jpg" class="img_dec_padding" ><img src="images/img/templates/28-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  
+                  
+                   
+             
+</p>
+							</div>
+             
+            <h2 class="tabsh2">Brochure Design</h2>
+			<div>
+			
+<p>
+ <div class="pull-left pro"><a href="images/img/brochures/107-big.jpg" class="img_dec_padding"><img src="images/img/brochures/107-small.jpg" alt="Countryroad" class="img_dec"></a>   <div class="text-center"><a href="#">Countryroad</a></div></div>
+   
+      <div class="pull-left pro"><a href="images/img/brochures/108-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/108-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+         <div class="pull-left pro"><a href="images/img/brochures/109-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/109-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+            <div class="pull-left pro"><a href="images/img/brochures/110-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/110-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+               <div class="pull-left pro"><a href="images/img/brochures/111-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/111-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/brochures/112-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/112-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/brochures/113-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/113-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+                  <div class="pull-left pro"><a href="images/img/brochures/106-big.jpg" class="img_dec_padding" ><img src="images/img/brochures/106-small.jpg" alt="Commex" class="img_dec"></a>   <div class="text-center"><a href="#">Commex</a></div></div>
+</p>
+							</div>
+                                            
+		</div>
+                  
+</div>
+</div>
+ 
+</div>
+<div class=" text-center cv">
+
+<h4 class="element" id="myresume">MY RESUME</h4><img src="images/mycv.png" class="img-responsive auto_m"></div>
+<div class="footer_bottom">
+<div class="container">
+<div class="row contact_flot">
+
+
+
+<div class="col-md-4 col-sm-6 pull-right cont">
+<h1 id="contact">Contact Us</h1>
+
+<div id="form-main">
+  <div id="form-div">
+    <form id="contact-form" action="/" method="post">
+		  <div>
+      <label>
+					<span>Name: (required)</span>
+					<input placeholder="Please enter your name" type="text">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Email: (required)</span>
+					<input placeholder="Please enter your email address" type="email" >
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Telephone: (required)</span>
+					<input placeholder="Please enter your number" type="tel" >
+				</label>
+			</div>
+			<div></div>
+			<div>
+				<label>
+					<span>Message: (required)</span>
+					<textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+				</label>
+			</div>
+			<div>
+				<button name="submit" type="submit" id="contact-submit">Send Email</button>
+			</div>
+		</form>
+  </div></div>
+
+</div>
+</div>
+<div class="row socirow">
+<div class="social_i">
+<div class="col-md-4 col-sm-4 col-xs-12 fot"><p>Copyright © 2024. All rights reserved.</p></div>
+<div class="col-md-8 col-sm-10 col-xs-12"><span><a href="#" class="sociallink">
+  <div id="facebook" class="social" style="background-color: rgb(53, 73, 112);">
+    <div class="button" style="left: 0px;"></div>
+    <span style="color: rgb(255, 255, 255); margin-left: 30px;">Follow on Facebook</span>
+    
+  </div>
+</a></span>
+<span>
+<a href="#" class="sociallink">
+  <div id="twitter" class="social" style="background-color: rgb(85, 212, 255);">
+    <div class="button" style="left: 0px;"></div>
+    <span style="color: rgb(255, 255, 255); margin-left: 30px;">Follow on Twitter</span>
+    
+  </div>
+</a>
+</span>
+<span>
+<a href="#" class="sociallink">
+  <div id="googleplus" class="social" style="background-color: rgb(56, 54, 56);">
+    <div class="button" style="left: 0px;"></div>
+    <span style="color: rgb(255, 255, 255); margin-left: 30px;">Follow on Google+</span>
+   
+  </div>
+</a>
+</span>
+
+</div>
+</div>
+</div>
+
+
+</div>
+
+ </div>
+</div>
+
+  <script src="js/stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+
+        <script>
+      ;
+(function ($) {
+    'use strict';
+    $(document).ready(function () {
+        $('#access').on('touchstart click', '.skip-link', function (event) {
+            $(this).toggleClass('focus');
+            $($(this).attr('href')).toggleClass('target');
+            event.preventDefault();
+        }).find('.skip-link').append('<span>' + $('#menu .active').text() + '</span>');
+    });
+}(jQuery));
+      //@ sourceURL=pen.js
+    </script>
+
+    
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+<script src="js/common/fusionad.js"></script>
+
+<!-- analytics -->
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-34160351-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	
+        <script>
+    $(function() {
+        $('a[href$=".jpg"]').abigimage({
+            onopen: function (target) {
+                this.bottom.html(
+                    $('img', target).attr('alt')
+                );
+            }
+        });
+    });
+
+    hljs.initHighlightingOnLoad();
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-11259339-5', 'aeqdev.com');
+    ga('send', 'pageview');
+</script>
+
+<script>
+		$(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+		</script>
+        <script>$(document).ready(function() {
+    $('.count').hide();
+
+    $('.sociallink').hover(
+     function() {
+      // Set Hover Color
+      social_id = $(this).find('.social').attr('id');
+      switch(social_id)
+      {
+        case 'twitter':
+          new_textcolor = '#55d4ff';
+          new_text = 'Twitter friends';
+          break;
+        case 'facebook':
+          new_textcolor = '#354970';
+          new_text = 'Facebook friends';
+          break;
+        case 'dribbble':
+          new_textcolor = '#b73567';
+          new_text = 'Facebook friends';
+          break;
+        case 'rss':
+          new_textcolor = '#db6610';
+          new_text = 'RSS Subscribers';
+          break;
+        case 'googleplus':
+          new_textcolor = '#383638';
+          new_text = 'Google+ friends';
+          break;
+        case 'forrst':
+          new_textcolor = '#315c23';
+          new_text = 'Forrst friends';
+          break;
+      }
+
+      $(this).find('.button').stop().animate({
+        'left': '119px'
+      }, 700);
+       $(this).find('span').stop().animate({
+         'margin-left': '5px',
+         'color': new_textcolor
+       }, 500);
+       $(this).find('.social').stop().animate({
+         backgroundColor: '#fcfcfc'
+       }, 500);
+
+       $(this).find('span').text(new_text);
+
+       $(this).find('.count').stop().fadeIn("slow");
+
+    },
+    function(){
+      social_id = $(this).find('.social').attr('id');
+      switch(social_id)
+      {
+        case 'twitter':
+          new_bgcolor = '#55d4ff';
+          new_text = 'Follow on Twitter';
+          break;
+        case 'facebook':
+          new_bgcolor = '#354970';
+          new_text = 'Follow on Facebook';
+          break;
+        case 'dribbble':
+          new_bgcolor = '#b73567';
+          new_text = 'Follow on Dribbble';
+          break;
+        case 'rss':
+          new_bgcolor = '#db6610';
+          new_text = 'Subscribe via RSS';
+          break;
+        case 'googleplus':
+          new_bgcolor = '#383638';
+          new_text = 'Follow on Google+';
+          break;
+        case 'forrst':
+          new_bgcolor = '#315c23';
+          new_text = 'Follow on Forrst';
+          break;
+      } 
+
+       $(this).find('.button').stop().animate({
+        'left': '0'
+        }, 700);
+      $(this).find('span').stop().animate({
+         'margin-left': '30px',
+        'color': '#ffffff'
+       }, 600);
+      $(this).find('.social').stop().animate({
+         backgroundColor: new_bgcolor
+       }, 500);
+
+      $(this).find('span').text(new_text);
+
+      $(this).find('.count').stop().fadeOut("slow");
+    });
+});</script>
+
+   <script src="slider_js/jquery.js"></script>
+    <script src="slider_js/jquery.event.move.js"></script>
+    <script src="slider_js/responsive-slider.js"></script>
+    
+    <script src= src="js/3d/fusionad.js"></script>
+      <script src="js/3d/modernizr.js"></script>
+     
+      
+      
+      	
+		
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+            
+            
+
+
+
+<script src="js/tabs/abigimage.jquery.js"></script>
+
+
+         
+   <script src="js/tabs/responsiveTabs.js"></script>
+            <script src="js/tabs/responsiveTabs.min.js"></script>
+
+    
+</body>
+</html>

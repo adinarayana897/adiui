@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Appointments</title>
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/core.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <style>
+         .modal-open{ padding-right:0px !important;}
+      </style>
+   </head>
+   <body class="hos bodyallvr">
+      <nav id="sidebaradi" class="active side-nav-cure">
+         <a href="index.html" class="logocure"> <img src="images/indexpageicons/logo.svg"/> </a>
+         <ul class="list-unstyled components mb-5">
+            <li class=" home_icon" > <a href="index.html" data-toggle="tooltip" data-placement="right" title="Home"> <span class="homeiconclss" > <img  src="./images/indexpageicons/home_line.svg"/> </span>  Home</a> </li>
+            <li class="active inner_icon"> <a href="appointments.html" data-toggle="tooltip" data-placement="right" title="Appointments"> <span> <img src="./images/indexpageicons/reports_white.svg"/> </span> Appoinments</a> </li>
+            <li class="inner_icon"> <a href="in-patient-list.html" data-toggle="tooltip" data-placement="right" title="In-patient-list"> <span> <img  src="./images/indexpageicons/ipdlist.svg"/> </span>IPD List</a> </li>
+            <li class="inner_icon"> <a href="out-patient-list.html" data-toggle="tooltip" data-placement="right" title="Out-patient-list"> <span> <img  src="./images/indexpageicons/outpatient.svg"/> </span>OPD List</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Pharmacy"> <span> <img  src="./images/indexpageicons/pharma.svg"/> </span>Pharmacy</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Diagnostic Center"> <span> <img  src="./images/indexpageicons/diagnostic.svg"/> </span>Diagnostic Center</a> </li>
+            <li class="inner_icon"> <a href="clinic-users.html" data-toggle="tooltip" data-placement="right" title="Patients"> <span> <img  src="./images/indexpageicons/patients.svg"/> </span> Patients</a> </li>
+            <li class="inner_icon"> <a href="clinic-admin.html" data-toggle="tooltip" data-placement="right" title="Admin"> <span> <img  src="./images/indexpageicons/admin.svg"/> </span>Admin</a> </li>
+            <li class="inner_icon"> <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Profile"> <span> <img  src="./images/indexpageicons/profile.svg"/> </span> Profile</a> </li>
+         </ul>
+      </nav>
+      <header class="bc_topmenu cure-main-div">
+         <div class="container-fulid">
+            <div class="row myrownew">
+               <div class="col-md-1 col-sm-12 col-xs-12 loge-cure">
+                  <div class="d-flex">
+                     <nav class="navbar navbar-expand-lg navbar-light">
+                        <button type="button" id="sidebaradiCollapse" class="btn btn-primary bc_topmenubtn"> <i class="fa fa-bars"></i> <span class="sr-only">Toggle Menu</span> </button>
+                     </nav>
+                     
+                     <div><img class="logo_mobile mobile_logo_320" src="images/curemetriclogocolor.svg"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <div class="allflex">
+                     <div class="mt-3">
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                           <label class="form-check-label" for="inlineRadio1">OPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">IPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">Emergency</label>
+                        </div>
+                     </div>
+                     <div class="topnav">
+                        <div class="search-container">
+                           <form action="#" class="">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="mrrs">
+                        <a href="#" data-toggle="modal" data-target="#newpatient">
+                           <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+                           <div class="float-left mt-1">
+                              
+                              New Patient
+                           
+                           </div>
+                        </a>
+                     </div>
+
+
+                     <div class="modal modal-right fade modlcure" id="newpatient" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content ">
+                              <div class="modal-header popupbackground">
+                                 <h5 class="modal-title">
+                                    <span class="float-left">
+                                       <div class="iconinnerbc_popup">
+                                          <img class="creat_rooms" src="images/inner_pages_icons/doctor.svg">
+                                       </div>
+                                    </span>
+                                    <span class="spaneeditem2">
+                                       Create User
+                                    </span>
+                                 </h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body modal-bodycure">
+                                 <div class="container user-curetab">
+                                    <div class="row mt-2 formgropnew">
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Username <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Email ID<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Email ID">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">First Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Middle Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Last Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Emergency Contact Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Phone Number<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                       </div>
+                                    
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">DOB (MM/DD/YYYY)<b>*</b></label>
+                                          <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Blood Group<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>A+</option>
+                                                      <option>B+</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Gender<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Male</option>
+                                                      <option>Female</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                      
+                                  
+                                  
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Zip/Pin Code<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Zip/Pin Code">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Country Code<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>IN</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Postal Location<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Enter Postal Location</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street1<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street1">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street2<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street2">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">City<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="City">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">State<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="State">
+                                       </div>
+                                       
+
+
+                                    
+                                       </div>
+                                    
+                                    <div class="vime">
+                                       <button type="button" class="btn butoon2 btn-primary al  button_code">
+                                          <a href="#">
+                                             <i class="plusicon fas fa-plus" src="./images/medicalhistory/plus.png"></i>Add User
+                                             </a>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- <div class="modal-footer modal-footer-fixed">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 logs">
+                  <div class=" cure_span_pad">
+                     <span class="span1">Last login 09-Jan-2023 11:17 AM</span> <span class="quastion span_icons"> <a href="#"><i class="fa fa-question"></i></a></span> <a href="#" class="notification">
+                     <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#notification"> <span><i class="fa fa-bell"></i></span></button>
+                     <span class="badge">3</span> </a> 
+                    <a href="#">
+                        <div class="d-flex">
+                           <span class="cure_span_pad ">
+                              
+                              <i class="fas fa-user profilemr profilecolor"></i>
+                           
+                           </span> 
+                           <!-- <span class=" usertext">
+                              <p class="font_wight_bold">Adinarayana</p>
+                              <p class="color_red ">28 years - Male </p>
+                           </span> -->
+                        </div>
+                     </a>
+                     <span class="span_icons ml-2"><a href="#"><i class="fas fa-sign-out-alt"></i></a></span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div role="main" class="cure-main-div">
+
+
+         <div class="container mysearch">
+            <div class="row">
+               <div class="topnav">
+                  <div class="search-container">
+                     <form action="#" class="">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                     </form>
+                  </div>
+               </div>
+               <div class="mrrs">
+                  <a href="#" data-toggle="modal" data-target="#newpatient">
+                     <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+                     <div class="float-left mt-1">
+                        
+                        New Patient
+                     
+                     </div>
+                  </a>
+               </div>
+            </div>
+            
+            </div>
+            
+            
+
+
+         <!-- Page Content  -->
+         <div class="clearfix  bcforall">
+            <section>
+               <div class="container-fluid cont">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <ol class="breadcrumb breadcrumbpro breadcrums">
+                           <li class="breadcrumb-item">
+                              <a href="index.html">
+                              <img src="images/inner_pages_icons/breadcrumb.svg"></a>
+                           </li>
+                           <li class="breadcrumb-item active" aria-current="page">All Appointments</li>
+                        </ol>
+                        <!-- <h5 class="cure-tabtabh5">Current Appointments</h5> -->
+                        <div class="app_bc cure-tabtab cure-tabtabnew cure-tab_border" >
+                           <ul class="nav nav-tabs cure-tab_border" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Current</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Upcoming</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Previous</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Cancelled</a>
+                              </li>
+                              <li class="float-right bookappointment margin-left-auto">
+                                 <div class="float-right mt-3 mmhos">
+                                    <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#bookappointment">
+                                    <i class="addbranch clicroom fas fa-plus"></i> 
+                                    Book Appointment
+                                    </button>
+                                 </div>
+                              </li>
+                           </ul>
+                           <!-- Tab panes -->
+                           <div class="tab-content mt-3 table_left_right_padding" >
+                              <div class="tab-pane active" id="tabs-1" role="tabpanel ">
+                                 <div class="topnav">
+                                    <div class="search-container mb-4 ml-3">
+                                       <form action="#" class="">
+                                          <input type="text" placeholder="Search.." name="search">
+                                          <button type="submit"><i class="fa fa-search"></i></button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="mt-2">
+
+
+                                    <div class="col-sm-12 col-xs-12 col-lg-12 order-sm-first order-last align-items-stretch b-table patpad">
+                                       <div class="table-wrapper has-mobile-cards">
+                                          <table class="table table-styled mb-0 table-hover table-striped">
+                                             <thead>
+                                                <tr>
+                                                  
+                                                   <th rowspan="" class="pad-14">Doctor Name</th>
+                                                   <th rowspan="">Patient Name </th>
+                                                   <th colspan="" > Date</th>
+                                                   <th rowspan="" >Time </th>
+                                                   <th rowspan="" >Reason</th>
+                                                   <th rowspan="" >Type Of Appionment</th>
+                                                   <th rowspan="" >Price</th>
+                                                   
+                                                </tr>
+                                           
+                                             </thead>
+                                             <!---->
+                                             <tbody class="ng-star-inserted isimgd">
+                                                <!---->
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                             <!---->
+                                           
+                                          </table>
+                                          <!---->
+                                         
+                                       </div>
+                                    </div>
+
+
+
+
+
+                                 </div>
+                                 <div class="float-right mt-3 mr-4">
+                                    <ul id="paginationnew">
+                                       <li><a class="" href="#">«</a></li>
+                                       <li><a href="#">1</a></li>
+                                       <li><a href="#" class="active">2</a></li>
+                                       <li><a href="#">3</a></li>
+                                       <li><a href="#">4</a></li>
+                                       <li><a href="#">5</a></li>
+                                       <li><a href="#">6</a></li>
+                                       <li><a href="#">7</a></li>
+                                       <li><a href="#">»</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                 <div class="topnav">
+                                    <div class="search-container mb-2 ml-3">
+                                       <form action="#" class="">
+                                          <input type="text" placeholder="Search.." name="search">
+                                          <button type="submit"><i class="fa fa-search"></i></button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="mt-2 ">
+                            
+                                    <div class="col-sm-12 col-xs-12 col-lg-12 order-sm-first order-last align-items-stretch b-table">
+                                       <div class="table-wrapper has-mobile-cards">
+                                          <table class="table table-styled mb-0 table-hover table-striped">
+                                             <thead>
+                                                <tr>
+                                                  
+                                                   <th rowspan="" class="pad-14">Doctor Name</th>
+                                                   <th rowspan="">Patient Name </th>
+                                                   <th colspan="" > Date</th>
+                                                   <th rowspan="" >Time </th>
+                                                   <th rowspan="" >Reason</th>
+                                                   <th rowspan="" >Type Of Appionment</th>
+                                                   <th rowspan="" >Price</th>
+                                                   
+                                                </tr>
+                                           
+                                             </thead>
+                                             <!---->
+                                             <tbody class="ng-star-inserted isimgd">
+                                                <!---->
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+
+
+
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                             <!---->
+                                           
+                                          </table>
+                                          <!---->
+                                         
+                                       </div>
+                                    </div>
+
+                                 </div>
+                                 <div class="float-right mt-3 mr-4">
+                                    <ul id="paginationnew">
+                                       <li><a class="" href="#">«</a></li>
+                                       <li><a href="#">1</a></li>
+                                       <li><a href="#" class="active">2</a></li>
+                                       <li><a href="#">3</a></li>
+                                       <li><a href="#">4</a></li>
+                                       <li><a href="#">5</a></li>
+                                       <li><a href="#">6</a></li>
+                                       <li><a href="#">7</a></li>
+                                       <li><a href="#">»</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                 <div class="topnav">
+                                    <div class="search-container mb-2 ml-3">
+                                       <form action="#" class="">
+                                          <input type="text" placeholder="Search.." name="search">
+                                          <button type="submit"><i class="fa fa-search"></i></button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="mt-2 curetab">
+
+                                    <div class="col-sm-12 col-xs-12 col-lg-12 order-sm-first order-last align-items-stretch b-table">
+                                       <div class="table-wrapper has-mobile-cards">
+                                          <table class="table table-styled mb-0 table-hover table-striped">
+                                             <thead>
+                                                <tr>
+                                                  
+                                                   <th rowspan="" class="pad-14">Doctor Name</th>
+                                                   <th rowspan="">Patient Name </th>
+                                                   <th colspan="" > Date</th>
+                                                   <th rowspan="" >Time </th>
+                                                   <th rowspan="" >Reason</th>
+                                                   <th rowspan="" >Type Of Appionment</th>
+                                                   <th rowspan="" >Price</th>
+
+                                                   <th rowspan="" >Action</th>
+                                                   
+                                                </tr>
+                                           
+                                             </thead>
+                                             <!---->
+                                             <tbody class="ng-star-inserted isimgd">
+                                                <!---->
+                                           
+                                                
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price ">
+                                                      Rs. 1200 
+                                                   </td>
+
+                                                   <td data-label="Action" class="lastclas" >
+
+                                                      <a href="#"><i class="fas fa-file-alt blue_bc"></i></a> 
+                                                    
+                                                    </td>
+                                                </tr>
+
+                                              
+                                             </tbody>
+                                             <!---->
+                                           
+                                          </table>
+                                          <!---->
+                                         
+                                       </div>
+                                    </div>
+
+
+
+                                   
+                                 </div>
+                                 <div class="float-right mt-3 mr-4">
+                                    <ul id="paginationnew">
+                                       <li><a class="" href="#">«</a></li>
+                                       <li><a href="#">1</a></li>
+                                       <li><a href="#" class="active">2</a></li>
+                                       <li><a href="#">3</a></li>
+                                       <li><a href="#">4</a></li>
+                                       <li><a href="#">5</a></li>
+                                       <li><a href="#">6</a></li>
+                                       <li><a href="#">7</a></li>
+                                       <li><a href="#">»</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                 <div class="topnav">
+                                    <div class="search-container mb-2 ml-3">
+                                       <form action="#" class="">
+                                          <input type="text" placeholder="Search.." name="search">
+                                          <button type="submit"><i class="fa fa-search"></i></button>
+                                       </form>
+                                    </div>
+                                 </div>
+                                 <div class="mt-2 curetab">
+
+                                    <div class="col-sm-12 col-xs-12 col-lg-12 order-sm-first order-last align-items-stretch b-table">
+                                       <div class="table-wrapper has-mobile-cards">
+                                          <table class="table table-styled mb-0 table-hover table-striped">
+                                             <thead>
+                                                <tr>
+                                                  
+                                                   <th rowspan="" class="pad-14">Doctor Name</th>
+                                                   <th rowspan="">Patient Name </th>
+                                                   <th colspan="" >Date</th>
+                                                   <th rowspan="" >Time </th>
+                                                   <th rowspan="" >Reason</th>
+                                                   <th rowspan="" >Type Of Appionment</th>
+                                                   <th rowspan="" >Price</th>
+                                                   <th rowspan="" >Action</th>
+                                                   
+                                                </tr>
+                                           
+                                             </thead>
+                                             <!---->
+                                             <tbody class="ng-star-inserted isimgd">
+                                                <!---->
+                                           
+                                                
+                                                <tr class="bg-danger-light ng-star-inserted">
+                                                   <td class="is-image-cell img_cell">
+                                                      <span class="userimg_app">
+                                                      <img src="images/indexpageicons/doctormale.svg" alt="Upcoming Discharges">
+                                                      </span>
+                                                      <b>Dr. Pulaparthi Adinarayana</b> 
+                                                   </td>
+                                                   <td data-label="Patient Name "><span>Gopi</span>
+                                                   </td>
+                                                   <td  data-label="Date ">
+                                                      11-Sep-2023
+                                                   </td>
+                                                   <td data-label="Time ">
+                                                      0:13.00
+                                                   </td>
+                                                   <td data-label="Reason" >
+                                                      general checkup
+                                                   </td>
+                                                   <td data-label="Type Of Appionment ">
+                                                      <i class="fas fa-phone  arrow phone_bc" title="Phone Call"></i>
+                                                   </td>
+                                                   <td data-label="Price">
+                                                      Rs. 1200 
+                                                   </td>
+
+                                                   <td data-label="Action" class="lastclas" >
+
+                                                      <a href="#"><i class="fas fa-file-alt blue_bc"></i></a> 
+                                                    
+                                                    </td>
+                                                </tr>
+
+                                              
+                                             </tbody>
+                                             <!---->
+                                           
+                                          </table>
+                                          <!---->
+                                         
+                                       </div>
+                                    </div>
+
+
+
+                                   
+                                 </div>
+                                 <div class="float-right mt-3 mr-4 ">
+                                    <ul id="paginationnew">
+                                       <li><a class="" href="#">«</a></li>
+                                       <li><a href="#">1</a></li>
+                                       <li><a href="#" class="active">2</a></li>
+                                       <li><a href="#">3</a></li>
+                                       <li><a href="#">4</a></li>
+                                       <li><a href="#">5</a></li>
+                                       <li><a href="#">6</a></li>
+                                       <li><a href="#">7</a></li>
+                                       <li><a href="#">»</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Headtop_notification_all -->
+                        <div class="modal modal-right fade modlcure" id="notification" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content ">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                       </span>
+                                       <span class="spaneeditem2"> Notifications </span> 
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                 </div>
+                                 <div class="modal-body modal-bodycure">
+                                    <section id="tabs " class="myaltabs">
+                                       <div class="container modal-bodycure">
+                                          <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                          <div class="container">
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="row">
+                                                <div class="col-md-12">
+                                                   <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                      <div class="notifications_bc">
+                                                         <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                         <div class="float-left">
+                                                            <div class="mrl10">
+                                                               <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                            </div>
+                                                            <div>
+                                                               <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                            </div>
+                                                         </div>
+                                                         <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </section>
+                                 </div>
+                                 <!-- <div class="modal-footer modal-footer-fixed">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="modal fade modlcurenew todayapp2" id="regular_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                           <div class="modal-dialog modelcon  modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                       </span>
+                                       <span class="spaneeditem2"> Notifications View </span> 
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <div class="notifications_bc2">
+                                       <div class="float-left mrl10"><i class="cure-noti fas fa-calendar-check"></i></div>
+                                       <div class="float-left">
+                                          <div class="mrl10">
+                                             <p>Reschedule Appointment <b style="font-weight: normal;"><i class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                          </div>
+                                          <div>
+                                             <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="modal modal-right fade modlcure" id="bookappointment" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content ">
+                                 <div class="modal-header popupbackground">
+                                    <h5 class="modal-title">
+                                       <span class="float-left">
+                                          <div class="iconinnerbc_popup">
+                                             <i class="fas fa-calendar-check iconcolor"></i>
+                                          </div>
+                                       </span>
+                                       <span class="spaneeditem2">
+                                          Book Appointment
+                                       </span>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body modal-bodycure mdlf">
+                                    <div class="container user-curetab">
+                                       <div class="row mt-2 formgropnew">
+                                         
+   
+                                          <div class="modal-body mdlbody">
+                                             <ul class="nav nav-tabs" id="civTab">
+                                                <li class="active">
+                                                   <a href="#home">
+                                                      <div style="margin: 0;" class="checkbox">
+                                                         <label style="float: left;">
+                                                            <input class="mytabaaa" style="display: inline-block;" type="checkbox" id="product" value="home" />
+                                                            <div style="display: inline-block;">New User</div>
+                                                         </label>
+                                                      </div>
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#profiles">
+                                                      <div style="margin: 0;" class="checkbox">
+                                                         <label style="float: left;">
+                                                            <input class="mytabaaa"  style="display: inline-block;" type="checkbox" id="product" value="profiles" />
+                                                            <div style="display: inline-block;">  Existing User  </div>
+                                                         </label>
+                                                      </div>
+                                                   </a>
+                                                </li>
+                                           
+                                              
+                                             </ul>
+                                             <div id='content' class="tab-content">
+                                                <div class="tab-pane active taber" id="home">
+                                                   <ul>
+                                                      <li>
+                                                         <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="hospital" role="tabpanel" aria-labelledby="hospital-tab">
+                                                               <div class=" user-curetab">
+                                                                 
+                                                            
+
+
+                                                                  <div class="row mt-0 formgropnew">
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Username <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                                                     </div>
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Email ID<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Email ID">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">First Name <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Middle Name <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Last Name <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                                                     </div>
+
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Password <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                                                     </div>
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Confirm Password <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                                                     </div>
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Phone Number<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                                                     </div>
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Emergency Contact Name <b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                                                     </div>
+                                                                     
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">DOB (MM/DD/YYYY)<b>*</b></label>
+                                                                        <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                                                     </div>
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                                        <label for="" class="col-form-label">Blood Group<b>*</b></label>
+                                                                        <div class="form-group input-material">
+                                                                           <div class="form-group input-material">
+                                                                              <div>
+                                                                                 <select class="form-control" id="personality" required="">
+                                                                                    <!-- <option value="" selected=""></option> -->
+                                                                                    <option disabled="disabled" selected="selected"></option>
+                                                                                    <option>A+</option>
+                                                                                    <option>B+</option>
+                                                                                 </select>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+
+                                                                     
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                                        <label for="" class="col-form-label">Gender<b>*</b></label>
+                                                                        <div class="form-group input-material">
+                                                                           <div class="form-group input-material">
+                                                                              <div>
+                                                                                 <select class="form-control" id="personality" required="">
+                                                                                    <!-- <option value="" selected=""></option> -->
+                                                                                    <option disabled="disabled" selected="selected"></option>
+                                                                                    <option>Male</option>
+                                                                                    <option>Female</option>
+                                                                                 </select>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Zip/Pin Code<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Zip/Pin Code">
+                                                                     </div>
+
+                                                                      
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                                        <label for="" class="col-form-label">Country Code<b>*</b></label>
+                                                                        <div class="form-group input-material">
+                                                                           <div class="form-group input-material">
+                                                                              <div>
+                                                                                 <select class="form-control" id="personality" required="">
+                                                                                    <!-- <option value="" selected=""></option> -->
+                                                                                    <option disabled="disabled" selected="selected"></option>
+                                                                                    <option>IN</option>
+                                                                                    <option>US</option>
+                                                                                 </select>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+
+
+                                                                     <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                                        <label for="" class="col-form-label">Postal Location<b>*</b></label>
+                                                                        <div class="form-group input-material">
+                                                                           <div class="form-group input-material">
+                                                                              <div>
+                                                                                 <select class="form-control" id="personality" required="">
+                                                                                    <!-- <option value="" selected=""></option> -->
+                                                                                    <option disabled="disabled" selected="selected"></option>
+                                                                                    <option>Enter Postal Location</option>
+                                                                                    <option>US</option>
+                                                                                 </select>
+                                                                              </div>
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+
+                                                                     
+                                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Street1<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Street1">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">Street2<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="Street2">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">City<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="City">
+                                                                     </div>
+                              
+                                                                     <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                                                        <label for="" class="col-form-label">State<b>*</b></label>
+                                                                        <input type="text" class="form-control" name="name" id="name" placeholder="State">
+                                                                     </div>
+                              
+                                                                    
+
+                                                                     </div>
+
+                                                                     <div class="vime float-right">
+                                                                        <button type="button" class="btn butoon2 btn-primary al  button_code"><i class="fas fa-user-md"></i> Add User</button>
+                                                                     </div>
+
+
+                                                                
+
+
+
+
+                                                             
+
+
+
+
+
+
+
+
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                                <div class="tab-pane taber" id="profiles">
+                                                   <ul>
+                                                      <li>
+                                                         <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="hospital" role="tabpanel" aria-labelledby="hospital-tab">
+                                                               Patient Name / Mobile Number *
+                                                               <div class="topnav topnav2">
+                                                                  <div class="search-container">
+                                                                     <form action="#" class="">
+                                                                        <input type="text" placeholder="Search.." name="search">
+                                                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                                                     </form>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                              
+                                              
+                                                <div class="tab-pane" id="settings"></div>
+                                             </div>
+                                          </div>
+   
+   
+                                       
+                                          </div>
+                                       
+                                   
+                                    </div>
+                                 </div>
+                                 <!-- <div class="modal-footer modal-footer-fixed">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> -->
+                              </div>
+                           </div>
+                        </div>
+   
+
+
+
+
+                        <!-- Headtop_notification_all -->
+                        <footer class="footer_padding">
+                           <nav class="mobile-bottom-nav">
+                              <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="appointments.html">
+
+                                    
+                                       <i class="icon_bottom fas fa-file-alt"  id="image"></i>
+                                       <p>Add Doctors</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="in-patient-list.html">
+                                       <i class=" icon_bottom fas fa-user-injured"></i>
+                                       <p>Ambulatory</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="out-patient-list.html">
+                                       <i class=" icon_bottom fas fa-procedures"></i>
+                                       <p>Base Schedule</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content"> <a href="index.html"> <i class="mobile_icon_home fas fa-home"></i></a> </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="clinic-users.html">
+                                       <i class=" icon_bottom fas fa-users"></i>
+                                       <p>Payments</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="clinic-admin.html">
+                                       <i class="icon_bottom fas fa-user-tie"></i>
+                                       <p>Bloodbank</p>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="mobile-bottom-nav__item">
+                                 <div class="mobile-bottom-nav__item-content">
+                                    <a href="profile.html">
+                                       <i class="icon_bottom fas fa-user-plus"></i>
+                                       <p>Profile</p>
+                                    </a>
+                                 </div>
+                              </div>
+                           </nav>
+                        </footer>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <footer class="clearfix cure-main-div cure-footer main-footer-cure profileprofilemain-footer-cure">
+         <p class="float-left"> Have a question? Call us : +1800-266-18023</p>
+         <p class="float-right"> Need support? Mail us : info@cure-metric.com</p>
+      </footer>
+      <script>
+         (function($) {
+         
+         "use strict";
+         
+         var fullHeight = function() {
+         
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+               $('.js-fullheight').css('height', $(window).height());
+            });
+         
+         };
+         fullHeight();
+         
+         $('#sidebaradiCollapse').on('click', function () {
+            $('#sidebaradi').toggleClass('active');
+            $('body').toggleClass('nav-expanded');
+         });
+         
+         })(jQuery);
+      </script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/tctooltip.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function(){
+             tctooltip({
+                 trigger:'tooltip-cursor',
+                 position:'cursor',
+                 openDelay:500,
+                 effectSpeed:500,
+                 fade:true,
+                 slide:false,
+                 cssInner:{
+                     'background-color':'#227405',
+                     border:'1px solid #ccc',
+                     'max-width':'300px',
+                     'font-family':'"Courier", serif'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-left',
+                 position:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-right',
+                 position:'right',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-noeffect',
+                 position:'right',
+                 effectSpeed:0,
+                 fade:false,
+                 slide:false,
+                 cssInner:{
+                     'background-color':'#227405',
+                     color:'#000',
+                     border:'2px dotted #f00',
+                     'max-width':'200px'
+                 }
+             });
+             tctooltip({
+                 trigger:'',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'-left',
+                 position:'above',
+                 skew:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'tooltip-below-right',
+                 position:'below',
+                 skew:'right',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'tooltip-photo-above',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 cssOuter:{
+                     'max-width':'200px'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-below',
+                 position:'below',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-bigslide',
+                 position:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 slideAmount:'100px',
+                 cssInner:{
+                     'background-color':'rgb(248, 87, 12)'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-styled',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 cssInner:{
+                     padding:'20px',
+                     display:'flex',
+                     'align-items':'center',
+                     'justify-content':'center',
+                     'font-family':'"Comic Sans MS", "Comic Sans", cursive',
+                     'font-size':'16px',
+                     width:'300px',
+                     height:'300px',
+                     'border-radius':'50%',
+                     'box-shadow':'4px 4px 10px #999',
+                     'background':'linear-gradient(45deg, #227405, #227405)'
+                 }
+             });
+         }, false);
+      </script>
+        <script>$('#civTab li').click(function (e) {
+         // e.preventDefault();
+            $(this).find('a').tab('show');
+         // $(this).tab('show');
+             $(this).closest('ul').find('input[type="checkbox"]').prop('checked','');
+             $(this).closest('li').find('input[type="checkbox"]').prop('checked','checked');
+           
+         });
+      </script>
+   </body>
+</html>

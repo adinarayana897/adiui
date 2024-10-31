@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Profile</title>
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://dev.cure-metric.com/cureMetric/assets/css/core.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   </head>
+   <body class="hos bodyallvr profilemenymont">
+      <nav id="sidebaradi" class="active side-nav-cure">
+         <a href="index.html" class="logocure"> <img src="images/indexpageicons/logo.svg"/> </a>
+         <ul class="list-unstyled components mb-5">
+            <li class=" home_icon" > <a href="index.html" data-toggle="tooltip" data-placement="right" title="Home"> <span class="homeiconclss" > <img  src="./images/indexpageicons/home_line.svg"/> </span>  Home</a> </li>
+            <li class="inner_icon"> <a href="appointments.html" data-toggle="tooltip" data-placement="right" title="Appointments"> <span> <img src="./images/indexpageicons/reports_white.svg"/> </span> Appoinments</a> </li>
+            <li class="inner_icon"> <a href="in-patient-list.html" data-toggle="tooltip" data-placement="right" title="In-patient-list"> <span> <img  src="./images/indexpageicons/ipdlist.svg"/> </span>IPD List</a> </li>
+            <li class="inner_icon"> <a href="out-patient-list.html" data-toggle="tooltip" data-placement="right" title="Out-patient-list"> <span> <img  src="./images/indexpageicons/outpatient.svg"/> </span>OPD List</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Pharmacy"> <span> <img  src="./images/indexpageicons/pharma.svg"/> </span>Pharmacy</a> </li>
+            <li class="inner_icon"> <a href="#" data-toggle="tooltip" data-placement="right" title="Diagnostic Center"> <span> <img  src="./images/indexpageicons/diagnostic.svg"/> </span>Diagnostic Center</a> </li>
+            <li class="inner_icon"> <a href="clinic-users.html" data-toggle="tooltip" data-placement="right" title="Patients"> <span> <img  src="./images/indexpageicons/patients.svg"/> </span> Patients</a> </li>
+            <li class="inner_icon"> <a href="clinic-admin.html" data-toggle="tooltip" data-placement="right" title="Admin"> <span> <img  src="./images/indexpageicons/admin.svg"/> </span>Admin</a> </li>
+            <li class=" active inner_icon"> <a href="profile.html" data-toggle="tooltip" data-placement="right" title="Profile"> <span> <img  src="./images/indexpageicons/profile.svg"/> </span> Profile</a> </li>
+         </ul>
+      </nav>
+      <header class="bc_topmenu cure-main-div">
+         <div class="container-fulid">
+            <div class="row myrownew">
+               <div class="col-md-1 col-sm-12 col-xs-12 loge-cure">
+                  <div class="d-flex">
+                     <nav class="navbar navbar-expand-lg navbar-light">
+                        <button type="button" id="sidebaradiCollapse" class="btn btn-primary bc_topmenubtn"> <i class="fa fa-bars"></i> <span class="sr-only">Toggle Menu</span> </button>
+                     </nav>
+                     
+                     <div><img class="logo_mobile mobile_logo_320" src="images/curemetriclogocolor.svg"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                  <div class="allflex">
+                     <div class="mt-3">
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                           <label class="form-check-label" for="inlineRadio1">OPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">IPD</label>
+                        </div>
+                        <div class="form-check form-check-inline float-left">
+                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
+                           <label class="form-check-label" for="inlineRadio2">Emergency</label>
+                        </div>
+                     </div>
+                     <div class="topnav">
+                        <div class="search-container">
+                           <form action="#" class="">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="mrrs">
+                        <a href="#" data-toggle="modal" data-target="#newpatient">
+                           <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+                           <div class="float-left mt-1">
+                              
+                              New Patient
+                           
+                           </div>
+                        </a>
+                     </div>
+
+
+                     <div class="modal modal-right fade modlcure" id="newpatient" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                        <div class="modal-dialog" role="document">
+                           <div class="modal-content ">
+                              <div class="modal-header popupbackground">
+                                 <h5 class="modal-title">
+                                    <span class="float-left">
+                                       <div class="iconinnerbc_popup">
+                                          <img class="creat_rooms" src="images/inner_pages_icons/doctor.svg">
+                                       </div>
+                                    </span>
+                                    <span class="spaneeditem2">
+                                       Create User
+                                    </span>
+                                 </h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                                 </button>
+                              </div>
+                              <div class="modal-body modal-bodycure">
+                                 <div class="container user-curetab">
+                                    <div class="row mt-2 formgropnew">
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Username <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Email ID<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Email ID">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">First Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Middle Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Last Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Emergency Contact Name <b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+                                       </div>
+                                       
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Phone Number<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Floor Number">
+                                       </div>
+                                    
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">DOB (MM/DD/YYYY)<b>*</b></label>
+                                          <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Blood Group<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>A+</option>
+                                                      <option>B+</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Gender<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Male</option>
+                                                      <option>Female</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                      
+                                  
+                                  
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Zip/Pin Code<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Zip/Pin Code">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Country Code<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>IN</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                          <label for="" class="col-form-label">Postal Location<b>*</b></label>
+                                          <div class="form-group input-material">
+                                             <div class="form-group input-material">
+                                                <div>
+                                                   <select class="form-control" id="personality" required="">
+                                                      <!-- <option value="" selected=""></option> -->
+                                                      <option disabled="disabled" selected="selected"></option>
+                                                      <option>Enter Postal Location</option>
+                                                      <option>US</option>
+                                                   </select>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street1<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street1">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">Street2<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="Street2">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">City<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="City">
+                                       </div>
+
+                                       <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 form-group mb-3">
+                                          <label for="" class="col-form-label">State<b>*</b></label>
+                                          <input type="text" class="form-control" name="name" id="name" placeholder="State">
+                                       </div>
+                                       
+
+
+                                    
+                                       </div>
+                                    
+                                    <div class="vime">
+                                       <button type="button" class="btn butoon2 btn-primary al  button_code">
+                                          <a href="#">
+                                             <i class="plusicon fas fa-plus" src="./images/medicalhistory/plus.png"></i>Add User
+                                             </a>
+                                       </button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- <div class="modal-footer modal-footer-fixed">
+                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                                 </div> -->
+                           </div>
+                        </div>
+                     </div>
+
+
+
+
+
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-12 col-xs-12 logs">
+                  <div class=" cure_span_pad">
+                     <span class="span1">Last login 09-Jan-2023 11:17 AM</span> <span class="quastion span_icons"> <a href="#"><i class="fa fa-question"></i></a></span> <a href="#" class="notification">
+                     <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#notification"> <span><i class="fa fa-bell"></i></span></button>
+                     <span class="badge">3</span> </a> 
+                    <a href="#">
+                        <div class="d-flex">
+                           <span class="cure_span_pad ">
+                              
+                              <i class="fas fa-user profilemr profilecolor"></i>
+                           
+                           </span> 
+                           <!-- <span class=" usertext">
+                              <p class="font_wight_bold">Adinarayana</p>
+                              <p class="color_red ">28 years - Male </p>
+                           </span> -->
+                        </div>
+                     </a>
+                     <span class="span_icons ml-2"><a href="#"><i class="fas fa-sign-out-alt"></i></a></span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div role="main" class="cure-main-div">
+
+         
+<div class="container mysearch">
+   <div class="row">
+      <div class="topnav">
+         <div class="search-container">
+            <form action="#" class="">
+               <input type="text" placeholder="Search.." name="search">
+               <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+         </div>
+      </div>
+      <div class="mrrs">
+         <a href="#" data-toggle="modal" data-target="#newpatient">
+            <div class="usernew float-left"><img src="images/inpatient/newpatient.svg" alt="Upcoming Discharges"></div>
+            <div class="float-left mt-1">
+               
+               New Patient
+            
+            </div>
+         </a>
+      </div>
+   </div>
+   
+   </div>
+   
+   
+         <!-- Page Content  -->
+         <div class="clearfix bcforall">
+            <section>
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div id="content" class="cont profilemeny">
+                           <div>
+                              <ol class="breadcrumb breadcrumbpro breadcrums">
+                                 <li class="breadcrumb-item">
+                                    <a href="index.html"><img src="images/inner_pages_icons/breadcrumb.svg"></a>
+                                 </li>
+                                 <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                              </ol>
+                              <div class="profile_bc">
+                                 <ul class="nav nav-tabs karatab" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                       <a class="nav-link active padding_tab" id="hospital-tab" data-toggle="tab" href="#hospital" role="tab" aria-controls="home" aria-selected="true">
+                                          <span >
+                                             <div class="profile_icon_ns"><img src="./images/profile_icons/hospitals.svg"></div>
+                                          </span>
+                                          <div>Hospital</div>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link padding_tab" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="profile" aria-selected="false">
+                                          <span>
+                                             <div class="profile_icon_ns"><img src="./images/profile_icons/personal.svg"></div>
+                                          </span>
+                                          <div>Personal</div>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link padding_tab" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="contact" aria-selected="false">
+                                          <span>
+                                             <div class="profile_icon_ns"><img src="./images/profile_icons/address.svg"></div>
+                                          </span>
+                                          <div>Address</div>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link padding_tab" id="addbranch-tab" data-toggle="tab" href="#addbranch" role="tab" aria-controls="contact" aria-selected="false">
+                                          <span>
+                                             <div class="profile_icon_ns"><img src="./images/profile_icons/addbranch.svg"></div>
+                                          </span>
+                                          <div>Add Branch</div>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link padding_tab" id="password-tab" data-toggle="tab" href="#password" role="tab" aria-controls="contact" aria-selected="false">
+                                          <span>
+                                             <div class="profile_icon_ns"><img class="change"  src="./images/profile_icons/changepassword.svg"></div>
+                                          </span>
+                                          <div>Change Password</div>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link padding_tab" id="payments-tab" data-toggle="tab" href="#payments" role="tab" aria-controls="contact" aria-selected="false">
+                                          <span>
+                                             <div class="profile_icon_ns"><img src="./images/profile_icons/payments.svg"></div>
+                                          </span>
+                                          <div>Payments</div>
+                                       </a>
+                                    </li>
+                                 </ul>
+                                 <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="hospital" role="tabpanel" aria-labelledby="hospital-tab">
+                                       <div class="container user-curetab">
+                                          <div class="row">
+                                             <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                                <h3>Hospital Details</h3>
+                                                <div class="linedo_profile"></div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-0">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Hospital Name <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Hospital name">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Branch code <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Please Enter Code">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">User Name <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Website Url <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Please Enter URL">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Description<b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Please Enter Description">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">GSTIN Number <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="GSTIN Number">
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Email Address <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Email Address">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Mobile<b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Please Enter your Number">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Medical license Number <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Medical license Number">
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">License Expiry Date (MM/DD/YYYY) <b>*</b></label>
+                                                <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                             </div>
+                                          </div>
+                                          <div class="vime"><button type="button" class="btn butoon1 btn-primary al button_code mr-10 buttonred"><a><i class="fas fa-sync-alt"></i></a> Reset</button>
+                                             <button type="button" class="btn butoon2 btn-primary al  button_code"><a><i class="far fa-edit "></i></a>Edit</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                                       <div class="container user-curetab">
+                                          <div class="row">
+                                             <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                                <h3>Personal Details</h3>
+                                                <div class="linedo_profile"></div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-0">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">DOB<b>*</b></label>
+                                                <span class="calnder_view"> <img class="calcav" src="./images/inner_pages_icons/calender_view.svg"></span>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="2/28/2023">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Height(Feets) <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Height(inches) <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Education Details <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>12th</option>
+                                                            <option>Degree</option>
+                                                            <option>MBBS</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Nationality <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>India</option>
+                                                            <option>South Africa</option>
+                                                            <option>Dubai</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Blood Group <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>0+</option>
+                                                            <option>A+</option>
+                                                            <option>AB-</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Martial Status <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>Married</option>
+                                                            <option>Single</option>
+                                                            <option>Others</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Gender <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                            <option>Others</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Preferred Languages <b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>English</option>
+                                                            <option>Hindi</option>
+                                                            <option>urdhu</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="vime"><button type="button" class="btn butoon1 btn-primary al button_code mr-10 buttonred"><a><i class="fas fa-sync-alt"></i></a> Reset</button>
+                                             <button type="button" class="btn butoon2 btn-primary al  button_code"><a><i class="far fa-edit "></i></a>Edit</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                                       <div class="container user-curetab">
+                                          <div class="row">
+                                             <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                                <h3>Primary Address</h3>
+                                                <div class="linedo_profile"></div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Contact Name<b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <div> <label for="" class="col-form-label">Mobile<b>*</b></label></div>
+                                                <div class="row">
+                                                   <div class="col-xl-1 col-lg-1 col-md-1 col-xs-12 mobilenumber">+91</div>
+                                                   <div  class="col-xl-11 col-lg-11 col-md-11 col-xs-12"> <input type="text" class="form-control" name="name" id="name" placeholder="Mobile Number"></div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Zip/Pin Code <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Zip/Pin Code">
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Country Code<b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>IN</option>
+                                                            <option>US</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3 cureadd">
+                                                <label for="" class="col-form-label">Postal Location<b>*</b></label>
+                                                <div class="form-group input-material">
+                                                   <div class="form-group input-material">
+                                                      <div>
+                                                         <select class="form-control" id="personality" required="">
+                                                            <!-- <option value="" selected=""></option> -->
+                                                            <option disabled="disabled" selected="selected"></option>
+                                                            <option>Mallampet</option>
+                                                            <option>Ap</option>
+                                                         </select>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Street1  <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Hyderabad">
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Street2 <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Hyderabad">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">City  <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your City">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">State  <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your State">
+                                             </div>
+                                          </div>
+                                          <div class="vime"><button type="button" class="btn butoon1 btn-primary al button_code mr-10 buttonred"><a><i class="fas fa-sync-alt"></i></a> Reset</button>
+                                             <button type="button" class="btn butoon2 btn-primary al  button_code"><a><i class="far fa-edit "></i></a>Edit</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="addbranch" role="tabpanel" aria-labelledby="addbranch-tab">
+                                       <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                          <div class="row">
+                                             <div class="col-xl-4 col-lg-4 col-md-4 col-xs-4 addbranch_text ">
+                                                <h3>Branch</h3>
+                                             </div>
+                                             <div class="col-xl8 col-lg-8 col-md-8 col-xs-8">
+                                                <div class="float-right mt-3"> <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads" data-toggle="modal" data-target="#right_modal">
+                                                   <i class="addbranch clicroom fas fa-plus"></i> Add Branch</button>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="linedo_profile"></div>
+                                          <div class="tab-pane active cure-tabtab" id="tabs-1" role="tabpanel ">
+                                             <table class="table table table-striped  table-styled table-hover">
+                                                <thead>
+                                                   <tr>
+                                                      <th scope="col" class="firstch firstaddress addressimg"> <img src="./images/profile_icons/branchaddress.svg"> Hospital Branch Address</th>
+                                                      <th scope="col" class="addressimg"><img src="./images/profile_icons/phonenumber.svg">Phone Number</th>
+                                                      <th scope="col" class="secondaddress addressimg"><img src="./images/profile_icons/envelope.svg">E-mail</th>
+                                                      <th scope="col">Action</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                   <tr class="">
+                                                      <th scope="row tableview">
+                                                         <p class="addressp">MIG113 & 114, Rd Number 1, Kukatpally Housing Board Colony,  Kukatpally, <br> Hyderabad, Telangana 500072</p>
+                                                      </th>
+                                                      <td>040 4410 8108</td>
+                                                      <td>enquiry@srisriholistichospitalsholistichospitals.com</td>
+                                                      <td>
+                                                         <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                                         <i class="far fa-edit addressedit"></i>
+                                                         </button>
+                                                         <i class="fas fa-trash delete_red_bc"></i>
+                                                      </td>
+                                                   </tr>
+                                                   <tr class="">
+                                                      <th scope="row tableview">
+                                                         <p class="addressp">MIG113 & 114, Rd Number 1, Kukatpally Housing Board Colony,  Kukatpally, <br> Hyderabad, Telangana 500072</p>
+                                                      </th>
+                                                      <td>040 4410 8108</td>
+                                                      <td>enquiry@srisriholistichospitalsholistichospitals.com</td>
+                                                      <td>
+                                                         <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                                         <i class="far fa-edit addressedit"></i>
+                                                         </button>
+                                                         <i class="fas fa-trash delete_red_bc"></i>
+                                                      </td>
+                                                   </tr>
+                                                   <tr class="">
+                                                      <th scope="row tableview">
+                                                         <p class="addressp">MIG113 & 114, Rd Number 1, Kukatpally Housing Board Colony,  Kukatpally, <br> Hyderabad, Telangana 500072</p>
+                                                      </th>
+                                                      <td>040 4410 8108</td>
+                                                      <td>enquiry@srisriholistichospitalsholistichospitals.com</td>
+                                                      <td>
+                                                         <button style="padding: 0;" type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm " data-toggle="modal" data-target="#ambulance_edit">
+                                                         <i class="far fa-edit addressedit"></i>
+                                                         </button>
+                                                         <i class="fas fa-trash delete_red_bc"></i>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                                       <div class="container user-curetab">
+                                          <div class="row">
+                                             <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                                <h3>Change Password</h3>
+                                                <div class="linedo_profile"></div>
+                                             </div>
+                                          </div>
+                                          <div class="row mt-3">
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Old Password <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">New Password <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                             </div>
+                                             <div class="col-xl-4 col-lg-4 col-md-6 col-xs-12 form-group mb-3">
+                                                <label for="" class="col-form-label">Confirm Password <b>*</b></label>
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                             </div>
+                                          </div>
+                                          <div class="vime"><button type="button" class="btn butoon1 btn-primary al button_code mr-10 buttonred"><a><i class="fas fa-sync-alt"></i></a> Reset</button>
+                                             <button type="button" class="btn butoon2 btn-primary al  button_code"><a><i class="far fa-edit "></i></a>Edit</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="payments" role="tabpanel" aria-labelledby="payments-tab">
+                                       <div class="container user-curetab">
+                                          <div class="row">
+                                             <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 form-group mb-1 hdt">
+                                                <h3>Payments</h3>
+                                                <div class="linedo_profile"></div>
+                                             </div>
+                                          </div>
+                                          <div class="tab-pane active cure-tabtab" id="tabs-1" role="tabpanel ">
+                                             <table class="table table table-striped  table-styled table-hover">
+                                                <thead>
+                                                   <tr>
+                                                      <th scope="col" class="firstch">Full Name</th>
+                                                      <th scope="col">Order ID</th>
+                                                      <th scope="col">Amount Paid</th>
+                                                      <th scope="col">Date</th>
+                                                      <th scope="col">View Invoice</th>
+                                                   </tr>
+                                                </thead>
+                                                <tbody>
+                                                   <tr class="">
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span> <a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td> <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2">
+                                                         <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td> <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2">
+                                                         <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button>
+                                                      </td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td > <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                   <tr>
+                                                      <th scope="row tableview" class="viewtab">
+                                                         <span class="userimg_app"><img src="images/indexpageicons/userupcomming.svg" alt="Upcoming Discharges"></span><a class="abtext" href="#">Pulaparthi Adinarayana</a> 
+                                                      </th>
+                                                      <td>CGV-app5646465474</td>
+                                                      <td>Rs.2000</td>
+                                                      <td>08-Feb-2023</td>
+                                                      <td> <button type="button" class="btn tableviewbtn btn-light border rounded-pill shadow-sm mb-1 allpads btnlinehight" data-toggle="modal" data-target="#right_modal2"> <i  class="tooltip-left arrow fas fa-eye paymentsbc" title="View Detials"></i></button></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                          </div>
+                                          <div class="modal modal-right fade modlcure" id="right_modal2" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                                             <div class="modal-dialog" role="document">
+                                                <div class="modal-content ">
+                                                   <div class="modal-header popupbackground">
+                                                      <h5 class="modal-title">
+                                                         <span class="float-left">
+                                                            <div class="iconinnerbc_popup">
+                                                               <img class="creat_rooms" src="images/profile_icons/invoice.svg">
+                                                            </div>
+                                                         </span>
+                                                         <span class="spaneeditem2">
+                                                         Invoice
+                                                         </span>
+                                                      </h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                   </div>
+                                                   <div class="modal-body modal-bodycure">
+                                                      <div class="container modal-bodycure">
+                                                         <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                                         <div class="container">
+                                                            <div class="row mt-2">
+                                                               <div class="col-md-6">
+                                                                  <div class="float-left ml-3">
+                                                                     <p>Order ID: 557</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-md-6">
+                                                                  <div class="float-right mr-3">
+                                                                     <p>Date: 17-Feb-2023</p>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="curepadtable"></div>
+                                                            <div class="row row_class" >
+                                                               <div class="col-md-6">
+                                                                  <div>
+                                                                     <b>Invoice From</b>
+                                                                     <p>Silicon Valley, Hitech City, Madhapur, Hyderabad, Telangana 500081.</p>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="col-md-6">
+                                                                  <div class="float-right">
+                                                                     <b>Invoice to</b>
+                                                                     <p>Silicon Valley, Hitech City, Madhapur, Hyderabad, Telangana 500081.</p>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                            <div class="row">
+                                                               <div class="col-md-12">
+                                                                  <div class="invoice_mai_bc">
+                                                                     <div class="pad2020">
+                                                                        <div class="float-left">
+                                                                           <h4>Amount Paid</h4>
+                                                                        </div>
+                                                                        <div class="float-right"><span><img class="cure-ru" src="images/medicalhistory/ruppee.png"></span><span>200</span></div>
+                                                                        <div class="curepad"></div>
+                                                                        <div class="line_height_4">
+                                                                           <div class="float-left">Status:</div>
+                                                                           <div class="float-right">Payment Done</div>
+                                                                        </div>
+                                                                        <div class="clr line_height_4">
+                                                                           <div class="float-left">Payment Method:</div>
+                                                                           <div class="float-right">UPI</div>
+                                                                        </div>
+                                                                        <div class="clr line_height_4">
+                                                                           <div class="float-left">Invoice:</div>
+                                                                           <div class="float-right">213</div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="invoicetable table_pad_pad">
+                                                                        <table class="table">
+                                                                           <thead>
+                                                                              <tr>
+                                                                                 <th scope="col" class="firstch">Description</th>
+                                                                                 <th scope="col">Quantity</th>
+                                                                                 <th scope="col">Tax</th>
+                                                                                 <th scope="col">Total</th>
+                                                                              </tr>
+                                                                           </thead>
+                                                                           <tbody>
+                                                                              <tr>
+                                                                                 <td>General Consultation</td>
+                                                                                 <td >1</td>
+                                                                                 <td ><img class="cure-ruppe" src="images/medicalhistory/rppe.png"> 0</td>
+                                                                                 <td ><img class="cure-ruppe" src="images/medicalhistory/rppe.png">  1000</td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                        <div class="curepad2"></div>
+                                                                        <div class="float-right contity">
+                                                                           <table>
+                                                                              <tr>
+                                                                                 <th class="classth">Sub-total:</th>
+                                                                                 <th><img class="cure-ruppe" src="images/medicalhistory/rppe.png"> 1000</th>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <div class="curepad2 clr"></div>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>Total:</td>
+                                                                                 <td><img class="cure-ruppe" src="images/medicalhistory/rppe.png"> 1000</td>
+                                                                              </tr>
+                                                                           </table>
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <!-- <div class="modal-footer modal-footer-fixed">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                                      </div> -->
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Headtop_notification_all -->
+                                    <div class="modal modal-right fade modlcure" id="notification" tabindex="-1" role="dialog" aria-labelledby="right_modal">
+                                       <div class="modal-dialog" role="document">
+                                          <div class="modal-content ">
+                                             <div class="modal-header popupbackground">
+                                                <h5 class="modal-title">
+                                                   <span class="float-left">
+                                                      <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                                   </span>
+                                                   <span class="spaneeditem2"> Notifications </span> 
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                                             </div>
+                                             <div class="modal-body modal-bodycure">
+                                                <section id="tabs " class="myaltabs">
+                                                   <div class="container modal-bodycure">
+                                                      <!-- <h6 class="section-title h1">Tabs</h6> -->
+                                                      <div class="container">
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                         <div class="row">
+                                                            <div class="col-md-12">
+                                                               <a href=""data-toggle="modal" data-target="#regular_modal">
+                                                                  <div class="notifications_bc">
+                                                                     <div class="float-left mrl10" ><i class="cure-noti fas fa-calendar-check" ></i></div>
+                                                                     <div class="float-left">
+                                                                        <div class="mrl10">
+                                                                           <p style="margin-bottom: 0px;margin-bottom: 10px;">Reschedule Appointment <b class=" font-norm"><i  class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                                        </div>
+                                                                        <div>
+                                                                           <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="float-right"><i class="notification_eye fas fa-eye notieyeyye" ></i></div>
+                                                                  </div>
+                                                               </a>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </section>
+                                             </div>
+                                             <!-- <div class="modal-footer modal-footer-fixed">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div> --> 
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="modal fade modlcurenew todayapp2" id="regular_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                       <div class="modal-dialog modelcon  modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                             <div class="modal-header popupbackground">
+                                                <h5 class="modal-title">
+                                                   <span class="float-left">
+                                                      <div class="iconinnerbc_popup"> <img class="creat_rooms" src="images/inner_pages_icons/bell.svg"> </div>
+                                                   </span>
+                                                   <span class="spaneeditem2"> Notifications View </span> 
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+                                             </div>
+                                             <div class="modal-body">
+                                                <div class="notifications_bc2">
+                                                   <div class="float-left mrl10"><i class="cure-noti fas fa-calendar-check"></i></div>
+                                                   <div class="float-left">
+                                                      <div class="mrl10">
+                                                         <p>Reschedule Appointment <b style="font-weight: normal;"><i class="rescheduleappointment fas fa-clock"></i>08:30</b></p>
+                                                      </div>
+                                                      <div>
+                                                         <h3>Your appointment successfully placed with <strong>Radiologist Radha </strong></h3>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- Headtop_notification_all -->
+                                 </div>
+                                 <footer class="footer_padding">
+                                    <nav class="mobile-bottom-nav">
+                                       <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="appointments.html">
+         
+                                             
+                                                <i class="icon_bottom fas fa-file-alt"  id="image"></i>
+                                                <p>Add Doctors</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="in-patient-list.html">
+                                                <i class=" icon_bottom fas fa-user-injured"></i>
+                                                <p>Ambulatory</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="out-patient-list.html">
+                                                <i class=" icon_bottom fas fa-procedures"></i>
+                                                <p>Base Schedule</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content"> <a href="index.html"> <i class="mobile_icon_home fas fa-home"></i></a> </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="clinic-users.html">
+                                                <i class=" icon_bottom fas fa-users"></i>
+                                                <p>Payments</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="clinic-admin.html">
+                                                <i class="icon_bottom fas fa-user-tie"></i>
+                                                <p>Bloodbank</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="mobile-bottom-nav__item">
+                                          <div class="mobile-bottom-nav__item-content">
+                                             <a href="profile.html">
+                                                <i class="icon_bottom fas fa-user-plus"></i>
+                                                <p>Profile</p>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </nav>
+                                 </footer>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <footer class="clearfix cure-footer main-footer-cure profileprofilemain-footer-cure">
+            <p class="float-left"> Have a question? Call us : +1800-266-18023</p>
+            <p class="float-right"> Need support? Mail us : info@cure-metric.com</p>
+         </footer>
+      </div>
+      <script>
+         (function($) {
+         
+         "use strict";
+         
+         var fullHeight = function() {
+         
+            $('.js-fullheight').css('height', $(window).height());
+            $(window).resize(function(){
+               $('.js-fullheight').css('height', $(window).height());
+            });
+         
+         };
+         fullHeight();
+         
+         $('#sidebaradiCollapse').on('click', function () {
+            $('#sidebaradi').toggleClass('active');
+            $('body').toggleClass('nav-expanded');
+         });
+         
+         })(jQuery);
+      </script> 
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip"]').tooltip();   
+         });
+      </script>
+      <script>
+         $(document).ready(function(){
+           $('[data-toggle="tooltip2"]').tooltip2();   
+         });
+      </script>
+      <script>
+         var navItems = document.querySelectorAll(".mobile-bottom-nav__item");
+          navItems.forEach(function (e, i) {
+            e.addEventListener("click", function (e) {
+              navItems.forEach(function (e2, i2) {
+                e2.classList.remove("mobile-bottom-nav__item--active");
+              });
+              this.classList.add("mobile-bottom-nav__item--active");
+            });
+          });
+          
+      </script>
+      <!-- adinarayana.... -->
+      <script src="js/profile/jquery.min.js"></script>
+      <!-- Vendor JS-->
+      <script type="text/javascript" src="js/tctooltip.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function(){
+             tctooltip({
+                 trigger:'tooltip-cursor',
+                 position:'cursor',
+                 openDelay:500,
+                 effectSpeed:500,
+                 fade:true,
+                 slide:false,
+                 cssInner:{
+                     'background-color':'#227405',
+                     border:'1px solid #ccc',
+                     'max-width':'300px',
+                     'font-family':'"Courier", serif'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-left',
+                 position:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-right',
+                 position:'right',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-noeffect',
+                 position:'right',
+                 effectSpeed:0,
+                 fade:false,
+                 slide:false,
+                 cssInner:{
+                     'background-color':'#227405',
+                     color:'#000',
+                     border:'2px dotted #f00',
+                     'max-width':'200px'
+                 }
+             });
+             tctooltip({
+                 trigger:'',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'-left',
+                 position:'above',
+                 skew:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'tooltip-below-right',
+                 position:'below',
+                 skew:'right',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true
+             });
+             tctooltip({
+                 trigger:'tooltip-photo-above',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 cssOuter:{
+                     'max-width':'200px'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-below',
+                 position:'below',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+             });
+             tctooltip({
+                 trigger:'tooltip-bigslide',
+                 position:'left',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 slideAmount:'100px',
+                 cssInner:{
+                     'background-color':'rgb(248, 87, 12)'
+                 }
+             });
+             tctooltip({
+                 trigger:'tooltip-styled',
+                 position:'above',
+                 effectSpeed:500,
+                 fade:true,
+                 slide:true,
+                 cssInner:{
+                     padding:'20px',
+                     display:'flex',
+                     'align-items':'center',
+                     'justify-content':'center',
+                     'font-family':'"Comic Sans MS", "Comic Sans", cursive',
+                     'font-size':'16px',
+                     width:'300px',
+                     height:'300px',
+                     'border-radius':'50%',
+                     'box-shadow':'4px 4px 10px #999',
+                     'background':'linear-gradient(45deg, #227405, #227405)'
+                 }
+             });
+         }, false);
+      </script>
+   </body>
+</html>

@@ -1,0 +1,1532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>CureMetric</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/custom-animation.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://kit.fontawesome.com/fd8dc1e2e1.js" crossorigin="anonymous"></script>
+
+    <!-- responsive css   -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3THFQGE48S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3THFQGE48S');
+    </script>
+    <script>
+
+        function showhide() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("toggle");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W9KTJRW');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <script>var status = "less";
+
+        function toggleText() {
+            var text = "Here is some text that I want added to the HTML file";
+
+            if (status == "less") {
+                document.getElementById("textArea").innerHTML = text;
+                document.getElementById("toggleButton").innerText = "See Less";
+                status = "more";
+            } else if (status == "more") {
+                document.getElementById("textArea").innerHTML = "";
+                document.getElementById("toggleButton").innerText = "See More";
+                status = "less"
+            }
+        }</script>
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9KTJRW" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--  preloader start -->
+    <div class="loader-wrap">
+        <div class="preloader"></div>
+
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>
+        <div class="layer layer-three"><span class="overlay"></span></div>
+        <img src="assets/images/heart.gif" alt="loading" class="loading_logo">
+
+
+
+    </div>
+
+    <!--  preloader end -->
+
+    <!--====== OFFCANVAS MENU PART START ======-->
+
+    <div class="off_canvars_overlay">
+
+    </div>
+    <div class="offcanvas_menu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="offcanvas_menu_wrapper">
+                        <div class="canvas_close">
+                            <a href="javascript:void(0)"><i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="offcanvas-brand text-center mb-40">
+                            <img src="assets/images/curemetriclogocolor.svg" alt="curemetriclogo">
+                        </div>
+                        <div id="menu" class="text-left ">
+                            <ul class="offcanvas_main_menu">
+                                <li class="menu-item-has-children active">
+                                    <a href="index.html">Home</a>
+
+                                </li>
+
+                                <li class="menu-item-has-children active">
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="menu-item-has-children active">
+                                    <a href="services.html" class="active">Services</a>
+                                </li>
+
+                                <li>
+                                    <a href="index.html#testimonial">Testimonial</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="https://curemetric.com/blog">Blog</a>
+
+                                </li>
+
+                                </li>
+
+                                <li class="menu-item-has-children active">
+                                    <a href="contact-us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-social">
+                            <ul class="text-center">
+                                <li><a href="https://www.facebook.com/Curemetric" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/Cure_Metric" target="_blank"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/curemetric" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-widget-info">
+                            <ul>
+                                <li><a href="mailto: info@curemetric.com" target="_blank"><i
+                                            class="fas fa-envelope"></i>info@curemetric.com</a></li>
+                                <li><a href="mailto: support@curemetric.com" target="_blank"><i
+                                            class="fas fa-phone"></i> support@curemetric.com</a></li>
+                                <li>
+                                    <div class="address"></strong><i class="fas fa-map-marker-alt"></i> 1st Floor, ANV
+                                        Arcade, Kavuri Hills Rd, CBI Colony, Jubilee Hills, Hyderabad, Telangana 500033
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== OFFCANVAS MENU PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <header class="cure-header-area cure-sticky">
+        <div class="container">
+            <div class="header-nav-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-4 col-sm-5 col-6 order-1 order-sm-1">
+                        <div class="cure-logo-box">
+                            <a href="index.html">
+                                <img src="assets/images/curemetriclogo.svg" alt="logo" class="disnone">
+                            </a>
+                            <a href="#"><img src="assets/images/curemetriclogocolor.svg" alt="CureMetric Logo"
+                                    class="img-responsive disblock disnone_web sitlogo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-1 col-sm-1 order-3 order-sm-2 ">
+                        <div class="cure-header-main-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+
+
+
+                                </li>
+
+                                <li><a href="about.html"> About</a></li>
+
+                                <li>
+                                    <a href="services.html" class="active">Services</a>
+
+
+
+
+
+
+                                </li>
+
+                                <li>
+                                    <a href="index.html#testimonial">Testimonial</a>
+
+                                </li>
+
+                                <li>
+                                    <a href="https://curemetric.com/blog">Blog</a>
+
+                                </li>
+
+                                </li>
+
+
+
+                                <li class="mrgright">
+                                    <a href="contact-us.html">Contact Us</a>
+
+
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
+                        <div class="cure-btn-box text-center">
+
+                            <div class="dropdown text1-right displaymenunone">
+                                <button class="dropbtn " onclick="myFunction()"><i class="fas fa-user"></i>
+                                    Login</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <ul>
+                                        <li><a href="https://curemetric.in/cureMetric/patientLogin"
+                                                target="_blank"><span><img alt="CureMetric User Login"
+                                                        src="assets/images/user1.png"></span>&nbsp User</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/Login" target="_blank"><span><img
+                                                        alt="CureMetric Doctor Login"
+                                                        src="assets/images/doctor1.png"></span>&nbsp Doctor</a>
+                                        </li>
+                                        <li><a href="https://curemetric.in/cureMetric/DiagnosticLogin"
+                                                target="_blank"><span><img alt="CureMetric Diagnostic Login"
+                                                        src="assets/images/diagnostic1.png"></span>&nbsp
+                                                Diagnostic</a>
+                                        </li>
+                                        <li><a href="https://curemetric.in/cureMetric/pharmaLogin"
+                                                target="_blank"><span><img alt="CureMetric Pharmacy Login"
+                                                        src="assets/images/pharmacy1.png"></span>&nbsp
+                                                Pharmacy</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/caretakerLogin"
+                                                target="_blank"><span><img alt="CureMetric Caretaker Login"
+                                                        src="assets/images/caretaker1.png"></span>&nbsp
+                                                Caretaker</a>
+                                        </li>
+                                        <li><a href="https://curemetric.in/cureMetric/nutritionistLogin"
+                                                target="_blank"><span><img alt="CureMetric Nutritionist Login"
+                                                        src="assets/images/nutritionist1.png"></span>&nbsp
+                                                Nutritionist</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/clinicLogin"
+                                                target="_blank"><span><img alt="CureMetric Hospital Login"
+                                                        src="assets/images/clinic1.png"></span>&nbsp
+                                                Hospital</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="dropdown text1-right displaynone990">
+                                <ul id="menu">
+
+                                    <input id="check02" type="checkbox" name="menu" />
+                                    <label for="check02"><i class="fas fa-user"></i> Login</label>
+                                    <ul class="submenu">
+                                        <li><a href="https://curemetric.in/cureMetric/patientLogin" target="_blank"><img
+                                                    alt="CureMetric User Login" src="assets/images/user1.png">&nbsp
+                                                User</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/Login" target="_blank"><img
+                                                    alt="CureMetric Doctor Login" src="assets/images/doctor1.png">&nbsp
+                                                Doctor</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/DiagnosticLogin"
+                                                target="_blank"><img alt="CureMetric Diagnostic Login"
+                                                    src="assets/images/diagnostic1.png">&nbsp Diagnostic</a>
+                                        </li>
+                                        <li><a href="https://curemetric.in/cureMetric/pharmaLogin" target="_blank"><img
+                                                    alt="CureMetric Pharmacy Login"
+                                                    src="assets/images/pharmacy1.png">&nbsp Pharmacy</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/caretakerLogin"
+                                                target="_blank"><img alt="CureMetric Caretaker Login"
+                                                    src="assets/images/caretaker1.png">&nbsp Caretaker</a></li>
+                                        <li><a href="https://curemetric.in/cureMetric/nutritionistLogin"
+                                                target="_blank"><img alt="CureMetric Nutritionist Login"
+                                                    src="assets/images/nutritionist1.png">&nbsp Nutritionist</a>
+                                        </li>
+                                        <li><a href="https://curemetric.in/cureMetric/clinicLogin" target="_blank"><img
+                                                    alt="CureMetric Hospital Login"
+                                                    src="assets/images/clinic1.png">&nbsp Hospital</a></li>
+                                    </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                            <div class="toggle-btn ml-30 canvas_open d-lg-none d-block">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--====== PART ENDS ======-->
+
+    <!--====== cure HERO PART START ======-->
+
+    <section class="cure-hero-area bc_services1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="cure-hero-content">
+
+                        <h1 class="cure-title servicespage1"> Booking</h1>
+
+                        <p>Home » Booking </p>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-shape-1">
+            <img src="images/shape-2.png" alt="shape">
+        </div>
+        <div class="hero-shape-2">
+            <img src="images/shape-3.png" alt="shape">
+        </div>
+        <div class="hero-shape-3">
+            <img src="images/shape-4.png" alt="shape">
+        </div>
+    </section>
+
+
+    <!--====== OFFCANVAS MENU PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+
+    <!--====== PART ENDS ======-->
+
+    <!--====== cure HERO PART START ======-->
+
+    <!--====== cure HERO PART ENDS ======-->
+
+    <!--====== cure SERVICES PART START ======-->
+
+    <div class="container">
+        <div id="dc-doctorslider-867445" class="dc-doctorslider owl-carousel dc-doctorslider-867445">
+            <div class="item dc-doctordetails-holder dc-titlecolor1">
+
+                <h3 class="text-center">
+                    <span> Appointment With</span> Doctors
+                </h3>
+
+                <a href="#" class="dc-btn">Book Now</a>
+            </div>
+            <div class="item dc-doctordetails-holder dc-titlecolor2">
+
+                <h3 class="text-center">
+                    <span> Appointment With</span> Caretakers
+                </h3>
+                <a href="#" class="dc-btn">Book Now</a>
+            </div>
+            <div class="item dc-doctordetails-holder dc-titlecolor3">
+
+                <h3 class="text-center">
+                    <span>Appointment With</span> Nutritionists
+                </h3>
+                <a href="#" class="dc-btn">Book Now</a>
+            </div>
+            <div class="item dc-doctordetails-holder dc-titlecolor4">
+
+                <h3 class="text-center">
+                    <span>Appointment With</span> Diagnostic
+                </h3>
+                <a href="#" class="dc-btn">Book Now</a>
+            </div>
+
+            <div class="item dc-doctordetails-holder dc-titlecolor5">
+
+                <h3 class="text-center">
+                    <span>Appointment With</span> Hospitals
+                </h3>
+                <a href="#" class="dc-btn">Book Now</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- category-section -->
+    <section class="category-section bg-color-3 centred mt-2">
+        <div class="pattern-layer">
+            <div class="pattern-1" style="background-image: url(images/shape-47.png);"></div>
+            <div class="pattern-2" style="background-image: url(images/shape-48.png);"></div>
+        </div>
+        <div class="container">
+            <div class="sec-title centred">
+                <p>Category</p>
+                <h2>Browse by Specialist</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-2 col-md-6 col-xs-6 col-sm-6 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-12.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Cardiologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fa fa-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-13.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Gastroenterologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fa fa-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="400ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-14.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Ear-Nose-Throat</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-15.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Ophthalmologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="00ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-16.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Nephrologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="200ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-17.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Pulmonologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="400ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-18.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Neurologist</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-19.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Orthopedic</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-19.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Oncology</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-19.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Pathology</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-19.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Pediatrics</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 category-block">
+                    <div class="category-block-one wow fadeInUp animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="pattern">
+                                <div class="pattern-1" style="background-image: url(images/shape-45.png);">
+                                </div>
+                                <div class="pattern-2" style="background-image: url(images/shape-46.png);">
+                                </div>
+                            </div>
+                            <figure class="icon-box"><img src="images/icon-19.png" alt=""></figure>
+                            <h3><a href="doctors-dashboard.html">Gynaecology</a></h3>
+                            <div class="link"><a href="doctors-dashboard.html"><i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="btn-box"><a href="doctors-dashboard.html" class="theme-btn-one">View List<i
+                                        class="fas fa-arrow-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-btn"><a href="doctors-dashboard.html" class="theme-btn-one">All Category<i
+                        class="fas fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+    <!-- category-section end -->
+    <!--====== cure SERVICES PART ENDS ======-->
+
+    <!--====== cure FEATURES PART START ======-->
+    <!-- team-style-three -->
+    <section class="team-style-three">
+        <div class="pattern-layer">
+            <div class="pattern-1" style="background-image: url(images/shape-51.png);"></div>
+            <div class="pattern-2" style="background-image: url(images/shape-52.png);"></div>
+            <div class="pattern-3" style="background-image: url(images/shape-53.png);"></div>
+        </div>
+        <div class="container">
+            <div class="sec-title light">
+                <p>Meet </p>
+                <h2>Top Rated Doctors</h2>
+                <div class="more-btn"><a href="doctors-1.html" class="theme-btn-one">All Doctors<i
+                            class="fas fa-arrow-right"></i></a></div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-three wow fadeInUp animated animated animated" data-wow-delay="00ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/team-13.jpg" alt="">
+                                <a href="doctors-dashboard.html"><i class="far fa-heart"></i></a>
+                            </figure>
+                            <div class="lower-content">
+                                <ul class="name-box clearfix">
+                                    <li class="name">
+                                        <h3><a href="doctors-dashboard.html">Dr. Julia Jhones</a></h3>
+                                    </li>
+                                    <li><i class="icon-Trust-1"></i></li>
+                                    <li><i class="icon-Trust-2"></i></li>
+                                </ul>
+                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
+                                <div class="rating-box clearfix">
+                                    <ul class="rating clearfix">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><a href="doctors-dashboard.html">(32)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-box">
+                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
+                                </div>
+                                <div class="lower-box clearfix">
+                                    <span class="text">Available Today</span>
+                                    <a href="doctors-dashboard.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-three wow fadeInUp animated animated animated" data-wow-delay="300ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/team-14.jpg" alt="">
+                                <a href="doctors-dashboard.html"><i class="far fa-heart"></i></a>
+                            </figure>
+                            <div class="lower-content">
+                                <ul class="name-box clearfix">
+                                    <li class="name">
+                                        <h3><a href="doctors-dashboard.html">Dr. Rex Allen</a></h3>
+                                    </li>
+                                    <li><i class="icon-Trust-1"></i></li>
+                                    <li><i class="icon-Trust-2"></i></li>
+                                </ul>
+                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
+                                <div class="rating-box clearfix">
+                                    <ul class="rating clearfix">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><a href="doctors-dashboard.html">(17)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-box">
+                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
+                                </div>
+                                <div class="lower-box clearfix">
+                                    <span class="text not-available">Not Available</span>
+                                    <a href="doctors-dashboard.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+                    <div class="team-block-three wow fadeInUp animated animated animated" data-wow-delay="600ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <figure class="image-box">
+                                <img src="images/team-15.jpg" alt="">
+                                <a href="doctors-dashboard.html"><i class="far fa-heart"></i></a>
+                            </figure>
+                            <div class="lower-content">
+                                <ul class="name-box clearfix">
+                                    <li class="name">
+                                        <h3><a href="doctors-dashboard.html">Dr. Julia Jhones</a></h3>
+                                    </li>
+                                    <li><i class="icon-Trust-1"></i></li>
+                                    <li><i class="icon-Trust-2"></i></li>
+                                </ul>
+                                <span class="designation">MBBS, MS - General Surgery, MCh</span>
+                                <div class="rating-box clearfix">
+                                    <ul class="rating clearfix">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><a href="doctors-dashboard.html">(20)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-box">
+                                    <p><i class="fas fa-map-marker-alt"></i>G87P, Birmingham, UK</p>
+                                </div>
+                                <div class="lower-box clearfix">
+                                    <span class="text not-available">Not Available</span>
+                                    <a href="doctors-dashboard.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team-style-three -->
+
+
+    <!--====== cure FEATURES PART ENDS ======-->
+
+    <!--====== cure TRAFFIC PART START ======-->
+
+    <section class="clinic-section doctors-page-section">
+        <div class="container">
+            <div class="sec-title centred">
+                <p>Meet</p>
+                <h2>Top Rated Doctors</h2>
+            </div>
+            <div class="row clearfix">
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/doctor.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/caretaker.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/diagnsotic.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/hospital.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/doctor.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/doctor.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 content-side">
+
+                    <div class="wrapper list">
+                        <div class="clinic-list-content list-item">
+                            <div class="clinic-block-one">
+                                <div class="inner-box">
+                                    <div class="pattern">
+                                        <div class="pattern-1" style="background-image: url(images/shape-24.png);">
+                                        </div>
+                                        <div class="pattern-2" style="background-image: url(images/shape-25.png);">
+                                        </div>
+                                    </div>
+                                    <figure class="image-box"><img src="images/doctor.png" alt=""></figure>
+                                    <div class="content-box">
+                                        <div class="like-box"><a href="doctors-details.html"><i class="far fa-heart"
+                                                    aria-hidden="true"></i></a></div>
+                                        <ul class="name-box clearfix">
+                                            <li class="name">
+                                                <h3><a href="doctors-details.html">Dr. Julia Jhones</a></h3>
+                                            </li>
+                                            <li><i class="icon-Trust-1"></i></li>
+                                            <li><i class="icon-Trust-2"></i></li>
+                                        </ul>
+                                        <span class="designation">MBBS, MS - General Surgery, MCh</span>
+
+                                        <div class="rating-box clearfix">
+                                            <ul class="rating clearfix">
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                <li><a href="doctors-details.html">(17)</a></li>
+                                            </ul>
+                                            <div class="link"><a href="doctors-details.html">24/7 Available</a></div>
+                                        </div>
+                                        <div class="location-box">
+                                            <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i>G87P, Birmingham,
+                                                UK</p>
+                                        </div>
+                                        <div class="btn-box"><a href="doctors-details.html">Visit Now</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="pagination-wrapper">
+                <ul class="pagination">
+                    <li><a href="clinic-1.html" class="current">1</a></li>
+                    <li><a href="clinic-1.html">2</a></li>
+                    <li><a href="clinic-1.html">3</a></li>
+                    <li><a href="clinic-1.html"><i class="fa fa-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cure-project-area pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cure-project-box wow animated slideInUp animated" data-wow-duration="1000ms"
+                        data-wow-delay="0ms"
+                        style="visibility: visible; animation-duration: 1000ms; animation-delay: 0ms; animation-name: slideInUp;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="cure-project-content">
+                                    <h3 class="title">Your Health, Your Way: <br> Take Charge with Curemetric!</h3>
+                                    <form action="#">
+                                        <div class="input-box mt-30">
+                                            <input type="text" placeholder="Your email">
+                                            <button>Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cure-project-thumb">
+                            <img src="assets/images/project-thumb.png" alt="project-thumb">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="cure-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about-widget">
+                        <div class="logo">
+                            <a href="#"><img src="assets/images/curemetriclogocolor.svg" alt="curemetriclogo"></a>
+                        </div>
+                        <p>
+                            We are one of a kind healthcare marketplace and aggregator service.
+                            Our Marketplace enables various healthcare providers to compete for
+                            customers by offering a variety of plans based on cost and need.
+                        </p>
+
+                        <div class="social mt-30">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Curemetric" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/Cure_Metric" target="_blank"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/curemetric"><i class="fab fa-linkedin-in"
+                                            target="_blank"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  col-sm-6 col-xs-6">
+                    <div class="footer-navigation">
+                        <h4 class="title">Services</h4>
+
+                        <div class="indclass">
+                            <ul class="mttm">
+                                <li><a href="https://app.curemetric.com/cureMetric/patientLogin" target="_blank">User</a>
+                                </li>
+                                <li><a href="https://app.curemetric.com/cureMetric/DiagnosticLogin"
+                                        target="_blank">Diagnostic </a></li>
+                                <li><a href="https://app.curemetric.com/cureMetric/caretakerLogin" target="_blank">CareTaker
+                                    </a></li>
+                                <li><a href="https://app.curemetric.com/cureMetric/clinicLogin" target="_blank">Hospital </a>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li><a href="https://app.curemetric.com/cureMetric/Login" target="_blank">Doctor </a></li>
+                                <li><a href="https://app.curemetric.com/cureMetric/pharmaLogin" target="_blank">Pharmacy </a>
+                                </li>
+                                <li><a href="https://app.curemetric.com/cureMetric/nutritionistLogin"
+                                        target="_blank">Nutritionist </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6  col-sm-6 col-xs-6">
+                    <div class="footer-navigation">
+                        <h4 class="title">Support</h4>
+                        <ul>
+                            <li><a href="terms.html" target="_blank">Terms and Conditions</a></li>
+                            <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                            <li><a href="advertising-policy.html" target="_blank">Advertising Policy</a></li>
+                            <li><a href="return-policy.html" target="_blank">Return Policy</a></li>
+                            <li><a href="shipping-policy.html" target="_blank">Shipping Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget-info">
+                        <h4 class="title">Get In Touch</h4>
+                        <ul>
+
+                            <li><a href="mailto: support@curemetric.com" target="_blank"><i class="fas fa-envelope"></i>
+                                    support@curemetric.com</a></li>
+                                    <li><i class="fa-solid fa-phone"></i>
+                                        +91-40-31537601</li>
+
+                                   
+                            <li>
+                                <div class="address"></strong><i class="fas fa-map-marker-alt"></i>
+                                    1st Floor, ANV Arcade, Kavuri Hills Rd, CBI Colony, Jubilee Hills, Hyderabad,
+                                    Telangana 500033</div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright d-flex align-items-center justify-content-between pt-35">
+                        <div class="apps-download-btn">
+                            <ul>
+                                <li><a href="https://apps.apple.com/in/app/curemetric/id1659587794" target="_blank"><i
+                                            class="fab fa-apple"></i> Download for iOS</a></li>
+                                <li><a class="item-2"
+                                        href="https://play.google.com/store/apps/details?id=com.cure.metric.curemetric"
+                                        target="_blank"><img style="margin-right: 9px;"
+                                            src="assets/images/shape/playstore.png"> Download for Android</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="">
+                            <div class="float-left">
+                                <div class="isocrt">ISO 9001:2015 and 27001:2013 <br>
+                                    Certified Company </div>
+                                    <p><a href="https://qtrack.lexq.us/certificateVerification" target="_blank">e-verify</a></p>
+                            </div>
+                            <div class="float-left"><a href="assets/images/curemetric _270012013.pdf" target="_blank"><img
+                                src="assets/images/iso_2013.png" class="mr-4"></a> </div>
+                            <div class="float-left"><a href="assets/images/curemetric_90012015.pdf" target="_blank"><img
+                                src="assets/images/iso_2015.png"></a></div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+
+<div class="row">
+    <div class="col-md-12 text-center pt-3">
+        <div class="copyright-text">
+            <p> © 2024, CureMetric Pvt. Ltd. All Rights Reserved.</p>
+        </div>
+    </div>
+   
+</div>
+
+
+        </div>
+    </section>
+
+    <!--====== cure FOOTER PART ENDS ======-->
+
+
+    <!--====== cure BACK TO TOP PART ENDS ======-->
+    <div class="back-to-top">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!--====== cure BACK TO TOP PART ENDS ======-->
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!--====== TweenMax js ======-->
+    <script src="assets/js/TweenMax.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Fontawesome js ======-->
+
+    <!-- <script src="assets/js/fontawesome.min.js"></script> -->
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js">
+
+
+
+
+
+    </script>
+
+    <script type='text/javascript' src='assets/js/owl.carousel.min.js?ver=1.5.9' id='owl-carousel-js'></script>
+
+
+    <link rel='stylesheet' id='owl-carousel-css' href='assets/css/owl.carousel.min.css?ver=1.5.9' type='text/css'
+        media='all' />
+    <script>
+        $(document).ready(function () {
+            $('input[type="type_patient"]').click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".desc").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        });
+
+        jQuery(window).load(function () {
+            function initshowCarousel() {
+                jQuery('.dc-doctorslider-867445').owlCarousel({
+                    rtl: false,
+                    loop: false,
+                    margin: 0,
+                    navSpeed: 500,
+                    nav: false,
+                    autoplay: false,
+                    items: 5,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 2,
+                        },
+                        800: {
+                            items: 3,
+                        },
+                        1080: {
+                            items: 4,
+                        },
+                        1280: {
+                            items: 5,
+                        },
+                    }
+                });
+            }
+
+            initshowCarousel();
+            setTimeout(function () { initshowCarousel(); }, 2000);
+            setTimeout(function () { initshowCarousel(); }, 3000);
+            setTimeout(function () { initshowCarousel(); }, 4000);
+        });
+
+    </script>
+
+</body>
+
+
+</html>
