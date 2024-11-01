@@ -65,6 +65,15 @@
   right: -20px;
   font-weight: bold;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+.menuenable{ display: none;}
+.hidden-xs {
+	display: block !important;
+}
+
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   .responsive-slider .slides ul li .slide-body .caption.sub {
     font-size: 11px;
