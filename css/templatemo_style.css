@@ -537,7 +537,7 @@ footer .col-lg-12 { padding: 0; }
 	background-color: #418aba;
 	padding: 6px;
 	border-radius: 34px;
-	margin-right: 10px;
+  margin-right: 6px;
 	border: 1px solid #fff;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	background-color: rgba(255, 255, 255, 0.2);
@@ -545,6 +545,7 @@ footer .col-lg-12 { padding: 0; }
 	-webkit-backdrop-filter: blur(10px);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(255, 255, 255, 0);
+  
 }
 
 .menuenable{ float: left;}
