@@ -1,0 +1,108 @@
+@media screen and (max-width:1199px) {
+	.padding-190 {
+		padding-top: 100px;
+	}
+
+	.ftppad {
+		padding-top: 70px;
+	}
+
+	.testmonialspad {
+		padding-bottom: 270px;
+	}
+
+}
+
+@media screen and (max-width:991px) {
+
+	.ftbc {
+		background-size: 100%;
+		background: #edf1fc !important;
+		height: auto !important;
+		padding-top: 30px;
+	}
+
+	.testmonialspad {
+		padding-bottom: 40px;
+	}
+
+	.footerclass {
+		margin-top: 0px;
+	}
+
+	.padding-92 {
+		padding-left: 0px;
+	}
+
+	.padding-172 {
+		padding-left: 0px;
+		margin-bottom: 20px;
+	}
+
+	.pr-140 {
+		padding-top: 20px;
+	}
+}
+
+@media screen and (max-width:980px) {
+
+	.moondesign {
+		background-size: 51%;
+	}
+
+	.padding-190 {
+		padding-top: 20px;
+	}
+
+
+	.padb-50 {
+		padding-bottom: 50px;
+	}
+
+}
+
+
+@media screen and (max-width:767px) {
+
+	.footer-widget {
+		padding-left: 20px;
+	}
+
+	.liveearthclass {
+		width: 100%;
+	}
+
+	.liveearthclass_view {
+		width: 100%;
+	}
+
+	.searchbox {
+		margin-top: 130px;
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width:472px) {
+
+	.moon_button {
+		margin-top: 20px;
+	}
+
+	.searchbox {
+		margin-top: 112px;
+	}
+
+	.searchbox h1 {
+		font-size: 24px;
+	}
+
+	.logo {
+		width: 50%;
+	}
+
+	.moondesign {
+		background-size: 51%;
+	}
+
+}
