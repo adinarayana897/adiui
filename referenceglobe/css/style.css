@@ -24,9 +24,11 @@ body {
 	box-shadow: 6px 9px 5px 2px #f3f2f2;
 	border-radius: 30px;
 	padding: 11px 23px;
+	padding-right: 130px;
 	width: 100%;
 	font-weight: 500;
 	border: 1px solid #f1efef;
+	color: #a3abb1;
 }
 
 .searchbox a {
