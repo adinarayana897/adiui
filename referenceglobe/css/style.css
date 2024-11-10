@@ -28,7 +28,7 @@ body {
 	width: 100%;
 	font-weight: 500;
 	border: 1px solid #f1efef;
-	color: #a3abb1 !important;
+	color: #a3abb1;
 }
 
 .searchbox a {
@@ -37,6 +37,9 @@ body {
   top: 5px;
 }
 
+input::-webkit-input-placeholder{
+	color: #dddada;
+}
 .searchbox h1 {
 	font-size: 27px;
 	color: #3c3a6c;
