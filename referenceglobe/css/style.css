@@ -28,7 +28,7 @@ body {
 	width: 100%;
 	font-weight: 500;
 	border: 1px solid #f1efef;
-	color: #a3abb1;
+	color: #a3abb1 !important;
 }
 
 .searchbox a {
